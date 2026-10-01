@@ -1,0 +1,1317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A32F02452C1F0F4615856F /* balloon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 60EF5A657BCE1C8BAFC17F47 /* balloon.usdz */; };
+		00C5F333FF572CB8C1074106 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC607370C0B74D36C3AA30EF /* SoundService.swift */; };
+		012AA752FDD2CF6C59DC0057 /* signpost.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0719EF62FA111660F808A916 /* signpost.usdz */; };
+		0619FD193855C84A03924530 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0AE0B8AF5026F704C9F41 /* PaywallView.swift */; };
+		0657442AA8559A3AA06F2916 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F241DC39DC776695158DE /* AlarmService.swift */; };
+		06D33FE95B14360A62BF48EC /* tree_blossom.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BC75FA03F403B66ABB8CFE90 /* tree_blossom.usdz */; };
+		0745AC16D8F1E36CC5C2AB5F /* NavGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE6E9A17552272ACF382B17 /* NavGrid.swift */; };
+		088621FD3C08C7AE9B0787F5 /* Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BCA50D6AE9978029B2E77 /* Placement.swift */; };
+		088C7B7DBE8B906D3C7E8170 /* scarecrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4C90AB10AF5814FDCD2FE22B /* scarecrow.usdz */; };
+		0B1110461F9D85683A346E0B /* fountain.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8BA8E531FB1FCB02C82CBF5F /* fountain.usdz */; };
+		0C97BDC402C42B8355DF0342 /* sfx_build.caf in Resources */ = {isa = PBXBuildFile; fileRef = 018A7E2039986FE7AF9AF0E6 /* sfx_build.caf */; };
+		0EFE09FD2FD20E800D65BEEB /* cloud_b.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 09EA75701E911472EB648BD8 /* cloud_b.usdz */; };
+		0F7BB14BCDC67C214B7259B3 /* maple.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FF6B2BBF784E3AA0E8D71E1D /* maple.usdz */; };
+		10E5AB95E8BFD5FD8F0B6E93 /* bedroom.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C45719DD02F62A6112A59660 /* bedroom.usdz */; };
+		110495112D50E763B310F588 /* pine.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6D400C0E6BFCA8F8FA0E417D /* pine.usdz */; };
+		116B6350C8F5344B4F1D27A9 /* hammock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF9883FEAB64228F73C9F065 /* hammock.usdz */; };
+		12A8895789C139D6565B2080 /* trip_harbor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 27583F5676126571DEE1E855 /* trip_harbor.usdz */; };
+		13EB55504B8AB309280C526A /* CloudClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8005A9CBE99161FDF645ACD /* CloudClock.swift */; };
+		14115008CB852F7013817400 /* flowers.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B61BE22BC6381243CC9CFFCD /* flowers.usdz */; };
+		1491048095445AE5DEA52750 /* hat_bow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 21CA18B954D83E9D744343E2 /* hat_bow.usdz */; };
+		1AEB84FE9A7ACA19FB40EBA3 /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E597CDF98FCBB4AD70E0CA17 /* ModelLibrary.swift */; };
+		1BE329AB42ED27AB6EB95FBB /* furn_teddy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C798A08A135152F0758A77A6 /* furn_teddy.usdz */; };
+		1DB79D3B0704E8C9AAE4D497 /* butterfly.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3878B0AA1419D1933CF19729 /* butterfly.usdz */; };
+		1E298D6D3944223918E0D724 /* archway.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46348A6E2933944ACACDC285 /* archway.usdz */; };
+		1FDBE1BAB9B60C9E0D988A4E /* glyph_6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FB06FC3BF6AA5507E1A98 /* glyph_6.usdz */; };
+		211A5B5F3D49CE4E323430A7 /* garden.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EFF28DA743D874C324A4D323 /* garden.usdz */; };
+		22F0FD92AA8CC095D0B96BF3 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D23AA89F56EBEFD4975DA65 /* Mission.swift */; };
+		251814C906C489162D1C6AFD /* tent_interior.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 88B7AB8D5341D95DB5D412A2 /* tent_interior.usdz */; };
+		259E638B052D6F01E9290888 /* hat_explorer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 183C5215FB56D48E08AD0424 /* hat_explorer.usdz */; };
+		2745ACB1E63677E6D8067067 /* sfx_nope.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5EF65347681112526922A9EE /* sfx_nope.caf */; };
+		2867D3D78816D8A7DD3C57AF /* crop_corn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 813B38B282F71D15BC7C275D /* crop_corn.usdz */; };
+		2876DFBE2AE082C77CD92332 /* paywall_hero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9822BC22C958A838F9AA836 /* paywall_hero.jpg */; };
+		28B72457957C11F8A2DDA925 /* sfx_pet.caf in Resources */ = {isa = PBXBuildFile; fileRef = F0B6E9D6AA0511F0B3B506B2 /* sfx_pet.caf */; };
+		2950E9203CEA911A3E0F537F /* cloud_a.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1BEB116C3CE37DD2F32CD6FF /* cloud_a.usdz */; };
+		2C25D964143914D95FA3C99F /* pond.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 34C04FB3BAFC8242DC989A23 /* pond.usdz */; };
+		2D8101839BB2039397F84230 /* glyph_0.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D57953BCBA02E89ADA61201E /* glyph_0.usdz */; };
+		32778943DD5A988510986EB7 /* mailbox.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 633415010286CC3885373377 /* mailbox.usdz */; };
+		33CBD7D89E2E0882DE6568EA /* boulders.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 81E229A028EB10DE19A7CD7B /* boulders.usdz */; };
+		342502635F51F39BF9E80316 /* Buildables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E576A211724FF920AAA03AD /* Buildables.swift */; };
+		35E17385DA4BC7466F47CA0E /* Interior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91DDBCC2706D08650E6F5DF /* Interior.swift */; };
+		361EBF7745BD7AA3BDAF61A4 /* furn_recordplayer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 39F9DF454907EEA616BF9E9A /* furn_recordplayer.usdz */; };
+		36C4E85B37EB910E48CA0DF9 /* music_island.caf in Resources */ = {isa = PBXBuildFile; fileRef = 56C2FD2334C939C456447CDD /* music_island.caf */; };
+		3C3E5E3255BB9B9A08933C47 /* campfire.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BBA9C70F1071039237509EFA /* campfire.usdz */; };
+		3D98A0B4F889F0AB1D2A6534 /* sfx_levelup.caf in Resources */ = {isa = PBXBuildFile; fileRef = F37F3FFBEE957599E9F8BE84 /* sfx_levelup.caf */; };
+		3DA8F29066D3EE4F46F80C57 /* furn_toychest.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C6C89358665E613ED380 /* furn_toychest.usdz */; };
+		3F2DF584272466385E113C10 /* AlarmViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A60BB4388A36A2DD5968A /* AlarmViews.swift */; };
+		3F3B27F27428CB84CBFE006C /* crop_turnip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 554D6E2E752EB14D5E6908A2 /* crop_turnip.usdz */; };
+		41485BD44F458CEBF45E0C03 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FED63F00FA5566B893207 /* MissionView.swift */; };
+		44A254D6C4402B86771C863E /* crop_sunflower.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 944BE659E12ABA766746D467 /* crop_sunflower.usdz */; };
+		44B7E89BA3B5FDB10B640162 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1475C96B5E3A21A6E5E575 /* SettingsView.swift */; };
+		4792B54E11D783621416EFF4 /* sfx_coin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE4D206722AC5CE9B76D140 /* sfx_coin.caf */; };
+		4810744EE21B942E1D5796FA /* trip_beach.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4EF879C5069723A5555713B8 /* trip_beach.usdz */; };
+		4A5F7CDC9D6E12391845DC01 /* crop_strawberry.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4F8D0A785BC16BC1CC2A8B66 /* crop_strawberry.usdz */; };
+		4A730BFE420A4F7C2B4C3B11 /* sfx_complete.caf in Resources */ = {isa = PBXBuildFile; fileRef = 36A096B470B48325E5287E00 /* sfx_complete.caf */; };
+		4C8A5D1F0655FB6A8118C935 /* glyph_P.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0D6B09FB49DFD742B778190D /* glyph_P.usdz */; };
+		4D3165DD049A3695D3499F05 /* postcard_woods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2E9F710B5954D4D1C8C585C /* postcard_woods.jpg */; };
+		4D96B0B083204BAEEF6605C8 /* glyph_E.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 965842B34AD22A7A25E3B564 /* glyph_E.usdz */; };
+		4F6C1AD8A9E282DC23E369DE /* alarm_bells.caf in Resources */ = {isa = PBXBuildFile; fileRef = BDC4FAB6A42D0E3D10A333CD /* alarm_bells.caf */; };
+		4FEACB1123C59CA86097FBA8 /* sfx_tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = C3B86AA27D0E97D5B5037769 /* sfx_tap.caf */; };
+		5325E9EA072C5FE2A13557A1 /* glyph_A.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B1B1E3652FF573E9F717D5B3 /* glyph_A.usdz */; };
+		5353B57176232A74092B4533 /* furn_poster_sun.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 82A3008C928F2DBABE8D7991 /* furn_poster_sun.usdz */; };
+		53786DF8C3B223ECF817304C /* glyph_I.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 433D3DCBFBCE7133A194C8B6 /* glyph_I.usdz */; };
+		53C0F7514FB926910E53BAF2 /* Career.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141E72D442500CB06C9C3AA /* Career.swift */; };
+		53DE469672FD008750B11F38 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D0A740EF9B7BD2543AAB6 /* PrivacyInfo.xcprivacy */; };
+		574FBBDC367A42D5B43896D7 /* glyph_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 813BBE3D9536EFE484274EC5 /* glyph_2.usdz */; };
+		57C65229CC0543B822430BE3 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9E743FB6DA9F4DEA5A1E4 /* JournalView.swift */; };
+		58AC8C16A5965B37BE1DC12D /* food_cake.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C4F3575D0195C288BC8C1494 /* food_cake.usdz */; };
+		5A962A286DB276D72FC4EBEB /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D8D5DABDBE0F47D8DBCCC3 /* Farm.swift */; };
+		5ECDA48B3471FCC4AD89787A /* trip_caves.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 123CDCB2DA4491CEA0278D48 /* trip_caves.usdz */; };
+		603EBE13C0E272C46D6942C9 /* furn_plant.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DD90FBF07D89D5687E3EAE38 /* furn_plant.usdz */; };
+		606239000ADF11949FEAE959 /* glyph_8.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A55E29E0CAB23C18F18DD78B /* glyph_8.usdz */; };
+		60DDFF2C1A0DC8ACEE053742 /* WorldScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79633967BAEE3AF7DE8F7E2C /* WorldScene.swift */; };
+		612CDEBDD912121580A95D88 /* bench.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D43244F24E938731ED8E1 /* bench.usdz */; };
+		612FB44336B0FAB58794BEC0 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B82CC46DB16EB01AE97D9 /* Achievements.swift */; };
+		616789422BD6C63580EAA879 /* furn_floorlamp.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4121B6C905AF9DBDA7ECCE0B /* furn_floorlamp.usdz */; };
+		63E23C93C2DDFC4C4DECF5CE /* glyph_7.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5B80F2625F83E968D157E6AA /* glyph_7.usdz */; };
+		64F9DC85BF690EA3014F0DA7 /* lanterns.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0EB0B1F7F82294A0207A280F /* lanterns.usdz */; };
+		6518F75343D3A533A934A670 /* PerfProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FEA04060996AACE8CAFEC7 /* PerfProbe.swift */; };
+		684E6520E41E9B56A485B95B /* ItemHunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94C980B8354665424A2BE0 /* ItemHunt.swift */; };
+		69D4A58ADD220E585FA93C0E /* furn_aquarium.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BAD12A6CBB8C114152D50843 /* furn_aquarium.usdz */; };
+		6A15EFFB53B39E3D978D3CA3 /* hat_headphones.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0E23798E3BF4E5B067C180DF /* hat_headphones.usdz */; };
+		6B805BB9E125788B05A5C4EB /* amb_night.caf in Resources */ = {isa = PBXBuildFile; fileRef = C22D103A0F130AFBEFF34713 /* amb_night.caf */; };
+		6D4185E103BDCE0795A730E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA3911715788C58A5FB5E5 /* HomeView.swift */; };
+		6E320A2E007059C8E9ACD083 /* furn_garland.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0117F31EC5D423D291EFA5A6 /* furn_garland.usdz */; };
+		7039E6330AD8399995CAF6B4 /* trip_moon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 725A474EE1102C98DD129EE7 /* trip_moon.usdz */; };
+		7140AE069CFEDE24654BBF3E /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2AE82ADE0C17DBC16A7E8 /* Textures.swift */; };
+		73778DEE914AEEE78EC72225 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4EAF08FEEBAFCE13419FA /* OnboardingView.swift */; };
+		750E0E6082E20BD150B59FCE /* SkyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F801E09D5E84D93D2DFFF94 /* SkyModel.swift */; };
+		7712B58196BCB44032C37C44 /* AlarmMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8A1F6295B66E30FCAD0 /* AlarmMetadata.swift */; };
+		77DA85DB8C57C89D9A1E820D /* SproutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29D90B62DCEA8F3F9AC6 /* SproutController.swift */; };
+		79A08E452E6FD6933588B231 /* island.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 548CDACB1B0D2DA0D53E5AF4 /* island.usdz */; };
+		79BA2D9810A322C64DC98293 /* bird.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BC999506F7C6E20320686D73 /* bird.usdz */; };
+		80825B32C18428D8F4413E6F /* food_apple.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3D68425F55E37D4EEAEFD998 /* food_apple.usdz */; };
+		81D9E678834455377AE3F67E /* telescope.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18D361F7AE37FDD97EE90A74 /* telescope.usdz */; };
+		82699010853963FCE016347A /* windmill.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9081E74B33D685DD543D2EA /* windmill.usdz */; };
+		861D9AF748B6DCC8CB832687 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F22A509ABCDAF80ED66C6 /* AlarmItem.swift */; };
+		8655935431E09276CA86E44A /* hat_beanie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5F29A03A395AC8EB404883C2 /* hat_beanie.usdz */; };
+		867432CA8591C5ED4A676A15 /* AlarmMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE47A8A1F6295B66E30FCAD0 /* AlarmMetadata.swift */; };
+		8B091D09D3A75FEE9E1A1F4F /* postcard_meadow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E50D3CAE9B9DF9C5D98F5E52 /* postcard_meadow.jpg */; };
+		8BC55DCC7A94474B0D532409 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048AD510FF4536A6B584506 /* RewardView.swift */; };
+		8BF79E6CDD71FE0382F0409A /* MissionAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC844C6B9C47840EC542843 /* MissionAvailability.swift */; };
+		8DD1D2BF09E28B44473529AA /* beehive.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9C84FD750B8E51A6BFC8A042 /* beehive.usdz */; };
+		8EF58FA88BFA5D5F16E37817 /* well.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D3C93A3AD91EE5EDB4254 /* well.usdz */; };
+		9208A50D264DB74B9A097010 /* lamppost.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07D98C56F667C6753FD58FA4 /* lamppost.usdz */; };
+		92866F8C8831ADEE5408037D /* hat_party.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6490EDEF5DD20B220E9D4772 /* hat_party.usdz */; };
+		946C6EC34CD63F881507C6A1 /* furn_desk.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0B9BF4CF1FCFE81EA7D024CB /* furn_desk.usdz */; };
+		9847368A0509E6EA816AE6BC /* PoseRepCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327DD5BDCB041B26AE0284E /* PoseRepCounter.swift */; };
+		99AA9F220F812C37249FF225 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 773BE5F05C1F1840CF7FF503 /* PrivacyInfo.xcprivacy */; };
+		9C68136A7E7838CDDBF86E16 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12875F913EAB4E837A7CFBE3 /* GameState.swift */; };
+		9D75CD6949CFC30D1FB774EA /* postcard_moon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95727819FC1B62ED9A4A1B44 /* postcard_moon.jpg */; };
+		9D91A9B5AB77B09054713214 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D23AA89F56EBEFD4975DA65 /* Mission.swift */; };
+		9DE3B0B96DE82EB2D0631199 /* alarm_sunrise.caf in Resources */ = {isa = PBXBuildFile; fileRef = A359DFCE249372196413A2ED /* alarm_sunrise.caf */; };
+		A10A2E1DD797939818B60BCB /* glyph_9.usdz in Resources */ = {isa = PBXBuildFile; fileRef = ED464B5DA169312E0A000C2B /* glyph_9.usdz */; };
+		A1576469C7AC6D12CED6450D /* furn_beanbag.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F726AADC9D914BBC42BD2 /* furn_beanbag.usdz */; };
+		A1C51C3CAE5B7C0F2C258625 /* hat_flowercrown.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 493CA44F636A7FF94E9FE081 /* hat_flowercrown.usdz */; };
+		A21F8E10383B4342E7093206 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B582172D37B0D01D9578F /* Notifications.swift */; };
+		A625F6E1CEF9E2476DD7D452 /* bridge.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8D5CF75E105B1D18C20A /* bridge.usdz */; };
+		A6B94B81528466B6CCCBC915 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5403BB3699EDF9140776EF7D /* WorldView.swift */; };
+		A99C3D83F7D0C33C45F8D493 /* gazebo.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D8A7F7092AA2B01CD1344BBE /* gazebo.usdz */; };
+		A9B9DE05DB1BCD1D2072D7B3 /* pumpkins.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D7E8313BC61981962BD64A1F /* pumpkins.usdz */; };
+		AB6A438AB1E086B7A5943967 /* trip_peaks.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C8EE74AA34D6E2255AFE3941 /* trip_peaks.usdz */; };
+		ABA1E33C93CD3DC7D7D8EF8E /* glyph_1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 12B630912DCB37E328EC7063 /* glyph_1.usdz */; };
+		AC9BCD107D00F8CD5683C2C8 /* glyph_5.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1347C39DE20B3D26DBB49D09 /* glyph_5.usdz */; };
+		AD2CA80D5AEA2F84029152C7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4635A564344460E138BCAAF2 /* Theme.swift */; };
+		AE3FBD111EDAC827019F3434 /* amb_day.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C00B42C0FB62F95810A62 /* amb_day.caf */; };
+		AED714ABB9559D63CF49840C /* picnic.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8912F29C3B01B80C0497BE1E /* picnic.usdz */; };
+		B359F6A3C02A132268817D9F /* alarm_meadow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 837E96CC5624E04FA17D5B4D /* alarm_meadow.caf */; };
+		B7470D08571267589A9DA808 /* Thumbnailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D02D944C88728879AC7B48 /* Thumbnailer.swift */; };
+		B75E5769958D92AC98F2556C /* glyph_4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 35956A70F7AB150C83DB9FD3 /* glyph_4.usdz */; };
+		B870F078E8064FFDE047494D /* postcard_mushroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B84BB474FFC2C93302F435E2 /* postcard_mushroom.jpg */; };
+		B8F6870AE153F076CFB3032B /* RiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8628847BC06C986F84E802 /* RiserApp.swift */; };
+		BB64B2A6069E0C85B0B94882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BF369D444B9E21B3066759 /* Assets.xcassets */; };
+		BB75C351870407B0FD8E2A07 /* glyph_colon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5B606ADEF2E72007A39735B0 /* glyph_colon.usdz */; };
+		BBC47EA11CE4F32625FE5F4E /* hat_pumpkin.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9C310FC533F2FC4CB223DFB /* hat_pumpkin.usdz */; };
+		BBCFA0C274A0DDEEF6493CA2 /* glyph_R.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2AD7DCB77F254C6111255D1A /* glyph_R.usdz */; };
+		BC49060ECC9D2E32CC6F8409 /* glyph_M.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 458CAFD069DA2BBDAE2CA2E4 /* glyph_M.usdz */; };
+		BCE95FC8E3FBD9BCEBCD16AA /* crop_pumpkin.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AB70DC0DAE081DCBB11657E4 /* crop_pumpkin.usdz */; };
+		C03FFB3EEA2683C2093F0BAD /* postcard_peaks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39280958877DF8FEA3E2E13B /* postcard_peaks.jpg */; };
+		C11A08496E353798FEBCB90E /* sfx_rep.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4938B5BA669EF9543B8E514 /* sfx_rep.caf */; };
+		C64312FDBD597204D1D56914 /* sprout.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D39D3477AD3F09C3FF7D9176 /* sprout.usdz */; };
+		C6FE520531D8A5C7797CDF9F /* cottage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F368DDCB7DA540A0487D956E /* cottage.usdz */; };
+		C9B752B79093D4E94802CFD5 /* postcard_caves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 153A3E5792C5830B56053DD3 /* postcard_caves.jpg */; };
+		CA76E956E45793DACAEDE921 /* food_soup.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4E5E1CE476032DC01D2D3DA8 /* food_soup.usdz */; };
+		CD39803AD3181411761ED75C /* postcard_farm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 687F915A551362E6A21D9186 /* postcard_farm.jpg */; };
+		D0C534C1C41F564A2BE21BE7 /* furn_shelf.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4EF9383709CA6B051555393 /* furn_shelf.usdz */; };
+		D205EAED34CEAEB0BF134318 /* sickbed.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 21BBB745A152C3E9EDCE163B /* sickbed.usdz */; };
+		D24D125DB240C2928F945AA1 /* hat_maple.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 40E2730151B1E0BF2851F35E /* hat_maple.usdz */; };
+		D3FFC173FA72D175C5F101EF /* hat_frog.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 86D6638E700EED73D5C72676 /* hat_frog.usdz */; };
+		D4669C2FF5C5F6865F6BC6B2 /* farm_island.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 43DEF826F931AABBCC4539D1 /* farm_island.usdz */; };
+		D482B9C8BB11F5EDFEB12631 /* postcard_harbor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08EC032CEA80F861CC9F63BF /* postcard_harbor.jpg */; };
+		D48463194918A8662520EC8B /* furn_armchair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1B507F7FDC821A8F2ED4D2DB /* furn_armchair.usdz */; };
+		D671EB7168EA731FC6160067 /* CritterSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED506DD7B80FC94D922386D5 /* CritterSystem.swift */; };
+		D6F0AB5B83CE7183C7B533C3 /* isle_beach.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CA3B1F43BF3BB913C7992475 /* isle_beach.usdz */; };
+		D7D2C848DB06A8F5D9A6EFFF /* hat_straw.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB178B0106ACA4EB8CDE0C /* hat_straw.usdz */; };
+		D9BB54D4B789A8553EDC8EC2 /* RiserWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E63067FDB389559A9FCF45 /* RiserWidgets.swift */; };
+		DEC1EC090477E98268600F22 /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDF79463738CEF20B5819B /* EnvironmentService.swift */; };
+		DF1AA8FFD45E7F4D2E931EF7 /* RiserWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 98D2A8790AFABD1C7315A944 /* RiserWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E163FC0082D090C10EDF02B3 /* RepCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35297F424E2EBF11E524547E /* RepCounters.swift */; };
+		E1EF29AB5B5839482D80F94C /* isle_meadow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7BC040C1BB09505355D21F7D /* isle_meadow.usdz */; };
+		E4B87468634880AD3267C13B /* trip_mushroom.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 69E3439555D87EE8B5560A22 /* trip_mushroom.usdz */; };
+		E97A45C020365754E4B0101C /* BuildSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233B55F0E04D35585B8C6CB /* BuildSheet.swift */; };
+		EA2F835D92B009C0A146FA74 /* trip_meadow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E95583B67AA24CE827D636A7 /* trip_meadow.usdz */; };
+		EBA2FB3BC3000156A5A16593 /* glyph_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6F20DBA28A46F3D18CABE246 /* glyph_3.usdz */; };
+		EC2AA05E35CAC06E7A2E466A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663CB125D1E956B430E338 /* AppModel.swift */; };
+		EC406753A50C6B6CEAE897F5 /* glyph_S.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9C63AA26BA5CEA0D14D15D55 /* glyph_S.usdz */; };
+		EC87CE6908F3CFF6E8CA98D1 /* hat_wizard.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 216BA338306673843DC54AAD /* hat_wizard.usdz */; };
+		EE5CF229DF9B0185FC5C7D3B /* TrialPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26F6C92E1F7A5B4FD62CB1 /* TrialPaywallView.swift */; };
+		EE735024223DA7432473E6CD /* crop_carrot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E9951F6EDD528AAD06653621 /* crop_carrot.usdz */; };
+		EEFCD75F9AE31FDDEDA1F6B8 /* furn_clock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A65C339689E806351DB3F349 /* furn_clock.usdz */; };
+		F078CB440FB068F49487ED35 /* hat_crown.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7014AEC72196420192470CC3 /* hat_crown.usdz */; };
+		F0EA9E063A8B81E0C4A4FF9B /* furn_rocker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE39DDE2D13A20C35BD6E6 /* furn_rocker.usdz */; };
+		F0FB5E79218C82B9944C19BF /* trip_woods.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 74C2BF7ACB8C784CE0468743 /* trip_woods.usdz */; };
+		F2B8A57E379215DD5AF8FD3C /* tent.usdz in Resources */ = {isa = PBXBuildFile; fileRef = ACF16522154BBAF4874B5D44 /* tent.usdz */; };
+		F5B72C22545D645199FEADD7 /* lighthouse.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1CF61DD5CD428976A91844F3 /* lighthouse.usdz */; };
+		F68F37A31EF108F4EEC9EE3A /* swing.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7F52611402F68C1413571808 /* swing.usdz */; };
+		F6A0F99BF0CEFE870C3B54F9 /* amb_rain.caf in Resources */ = {isa = PBXBuildFile; fileRef = 87FAE728CA1EFF6931FBA8FE /* amb_rain.caf */; };
+		F786B6184A2E7110BE671617 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = D65CB8DE5E30FA9116FD608B /* RevenueCat */; };
+		F7CF4497B3B635241A5795C1 /* bushes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 43EF9A62A43BF2A35586B7A5 /* bushes.usdz */; };
+		F835B45C7D332D6D1C59C443 /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8FCAE0B2A7C89AB8FF8133 /* PurchaseService.swift */; };
+		F950406BE691439C5B16B7FE /* tree_round.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E09F7C9EB76A0532AACC8FDC /* tree_round.usdz */; };
+		FD4C069D7BCF638BB49AE605 /* AdventureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5360E40228BDAD9354E74 /* AdventureViews.swift */; };
+		FF025FFE3A0196E6CBD5D9F5 /* Adventures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1BFB07ABFEAC619B30660 /* Adventures.swift */; };
+		FF04CF5196E7F8C47DC16936 /* postcard_beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 493972A30D9686008FB04119 /* postcard_beach.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA48858C371FB2CA9A95E84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD9A56754B096C34055E3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8726C39290AF5AACECDAA2DD;
+			remoteInfo = RiserWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12A708D8CE0B693770E54D25 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DF1AA8FFD45E7F4D2E931EF7 /* RiserWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0117F31EC5D423D291EFA5A6 /* furn_garland.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_garland.usdz; sourceTree = "<group>"; };
+		018A7E2039986FE7AF9AF0E6 /* sfx_build.caf */ = {isa = PBXFileReference; path = sfx_build.caf; sourceTree = "<group>"; };
+		0719EF62FA111660F808A916 /* signpost.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = signpost.usdz; sourceTree = "<group>"; };
+		07D98C56F667C6753FD58FA4 /* lamppost.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = lamppost.usdz; sourceTree = "<group>"; };
+		08EC032CEA80F861CC9F63BF /* postcard_harbor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_harbor.jpg; sourceTree = "<group>"; };
+		09EA75701E911472EB648BD8 /* cloud_b.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cloud_b.usdz; sourceTree = "<group>"; };
+		0B9BF4CF1FCFE81EA7D024CB /* furn_desk.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_desk.usdz; sourceTree = "<group>"; };
+		0D6B09FB49DFD742B778190D /* glyph_P.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_P.usdz; sourceTree = "<group>"; };
+		0E23798E3BF4E5B067C180DF /* hat_headphones.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_headphones.usdz; sourceTree = "<group>"; };
+		0EB0B1F7F82294A0207A280F /* lanterns.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = lanterns.usdz; sourceTree = "<group>"; };
+		123CDCB2DA4491CEA0278D48 /* trip_caves.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_caves.usdz; sourceTree = "<group>"; };
+		12875F913EAB4E837A7CFBE3 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		12B630912DCB37E328EC7063 /* glyph_1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_1.usdz; sourceTree = "<group>"; };
+		1347C39DE20B3D26DBB49D09 /* glyph_5.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_5.usdz; sourceTree = "<group>"; };
+		153A3E5792C5830B56053DD3 /* postcard_caves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_caves.jpg; sourceTree = "<group>"; };
+		183C5215FB56D48E08AD0424 /* hat_explorer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_explorer.usdz; sourceTree = "<group>"; };
+		18CE29D90B62DCEA8F3F9AC6 /* SproutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SproutController.swift; sourceTree = "<group>"; };
+		18D361F7AE37FDD97EE90A74 /* telescope.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = telescope.usdz; sourceTree = "<group>"; };
+		1A6D0A740EF9B7BD2543AAB6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1B507F7FDC821A8F2ED4D2DB /* furn_armchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_armchair.usdz; sourceTree = "<group>"; };
+		1BEB116C3CE37DD2F32CD6FF /* cloud_a.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cloud_a.usdz; sourceTree = "<group>"; };
+		1CF61DD5CD428976A91844F3 /* lighthouse.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = lighthouse.usdz; sourceTree = "<group>"; };
+		1D1C00B42C0FB62F95810A62 /* amb_day.caf */ = {isa = PBXFileReference; path = amb_day.caf; sourceTree = "<group>"; };
+		1D4F241DC39DC776695158DE /* AlarmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
+		1F801E09D5E84D93D2DFFF94 /* SkyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyModel.swift; sourceTree = "<group>"; };
+		2048AD510FF4536A6B584506 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		216BA338306673843DC54AAD /* hat_wizard.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_wizard.usdz; sourceTree = "<group>"; };
+		21BBB745A152C3E9EDCE163B /* sickbed.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sickbed.usdz; sourceTree = "<group>"; };
+		21CA18B954D83E9D744343E2 /* hat_bow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_bow.usdz; sourceTree = "<group>"; };
+		27583F5676126571DEE1E855 /* trip_harbor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_harbor.usdz; sourceTree = "<group>"; };
+		2AD7DCB77F254C6111255D1A /* glyph_R.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_R.usdz; sourceTree = "<group>"; };
+		2FBE39DDE2D13A20C35BD6E6 /* furn_rocker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_rocker.usdz; sourceTree = "<group>"; };
+		30F1BFB07ABFEAC619B30660 /* Adventures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventures.swift; sourceTree = "<group>"; };
+		34C04FB3BAFC8242DC989A23 /* pond.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pond.usdz; sourceTree = "<group>"; };
+		35297F424E2EBF11E524547E /* RepCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCounters.swift; sourceTree = "<group>"; };
+		35956A70F7AB150C83DB9FD3 /* glyph_4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_4.usdz; sourceTree = "<group>"; };
+		36A096B470B48325E5287E00 /* sfx_complete.caf */ = {isa = PBXFileReference; path = sfx_complete.caf; sourceTree = "<group>"; };
+		3878B0AA1419D1933CF19729 /* butterfly.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = butterfly.usdz; sourceTree = "<group>"; };
+		39280958877DF8FEA3E2E13B /* postcard_peaks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_peaks.jpg; sourceTree = "<group>"; };
+		39F9DF454907EEA616BF9E9A /* furn_recordplayer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_recordplayer.usdz; sourceTree = "<group>"; };
+		3D68425F55E37D4EEAEFD998 /* food_apple.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = food_apple.usdz; sourceTree = "<group>"; };
+		3E576A211724FF920AAA03AD /* Buildables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildables.swift; sourceTree = "<group>"; };
+		3E7D43244F24E938731ED8E1 /* bench.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bench.usdz; sourceTree = "<group>"; };
+		3EE6E9A17552272ACF382B17 /* NavGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavGrid.swift; sourceTree = "<group>"; };
+		40E2730151B1E0BF2851F35E /* hat_maple.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_maple.usdz; sourceTree = "<group>"; };
+		4121B6C905AF9DBDA7ECCE0B /* furn_floorlamp.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_floorlamp.usdz; sourceTree = "<group>"; };
+		433D3DCBFBCE7133A194C8B6 /* glyph_I.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_I.usdz; sourceTree = "<group>"; };
+		43DEF826F931AABBCC4539D1 /* farm_island.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = farm_island.usdz; sourceTree = "<group>"; };
+		43EF9A62A43BF2A35586B7A5 /* bushes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bushes.usdz; sourceTree = "<group>"; };
+		458CAFD069DA2BBDAE2CA2E4 /* glyph_M.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_M.usdz; sourceTree = "<group>"; };
+		46348A6E2933944ACACDC285 /* archway.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = archway.usdz; sourceTree = "<group>"; };
+		4635A564344460E138BCAAF2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		464A60BB4388A36A2DD5968A /* AlarmViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViews.swift; sourceTree = "<group>"; };
+		493972A30D9686008FB04119 /* postcard_beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_beach.jpg; sourceTree = "<group>"; };
+		493CA44F636A7FF94E9FE081 /* hat_flowercrown.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_flowercrown.usdz; sourceTree = "<group>"; };
+		4A8B582172D37B0D01D9578F /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		4A8FCAE0B2A7C89AB8FF8133 /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		4C90AB10AF5814FDCD2FE22B /* scarecrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = scarecrow.usdz; sourceTree = "<group>"; };
+		4D26F6C92E1F7A5B4FD62CB1 /* TrialPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialPaywallView.swift; sourceTree = "<group>"; };
+		4D8FB06FC3BF6AA5507E1A98 /* glyph_6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_6.usdz; sourceTree = "<group>"; };
+		4E5E1CE476032DC01D2D3DA8 /* food_soup.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = food_soup.usdz; sourceTree = "<group>"; };
+		4EF879C5069723A5555713B8 /* trip_beach.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_beach.usdz; sourceTree = "<group>"; };
+		4F8D0A785BC16BC1CC2A8B66 /* crop_strawberry.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_strawberry.usdz; sourceTree = "<group>"; };
+		506B82CC46DB16EB01AE97D9 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		5327DD5BDCB041B26AE0284E /* PoseRepCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseRepCounter.swift; sourceTree = "<group>"; };
+		5403BB3699EDF9140776EF7D /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		548CDACB1B0D2DA0D53E5AF4 /* island.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = island.usdz; sourceTree = "<group>"; };
+		554D6E2E752EB14D5E6908A2 /* crop_turnip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_turnip.usdz; sourceTree = "<group>"; };
+		56C2FD2334C939C456447CDD /* music_island.caf */ = {isa = PBXFileReference; path = music_island.caf; sourceTree = "<group>"; };
+		56CA3911715788C58A5FB5E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B606ADEF2E72007A39735B0 /* glyph_colon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_colon.usdz; sourceTree = "<group>"; };
+		5B80F2625F83E968D157E6AA /* glyph_7.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_7.usdz; sourceTree = "<group>"; };
+		5BAB178B0106ACA4EB8CDE0C /* hat_straw.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_straw.usdz; sourceTree = "<group>"; };
+		5EF65347681112526922A9EE /* sfx_nope.caf */ = {isa = PBXFileReference; path = sfx_nope.caf; sourceTree = "<group>"; };
+		5F29A03A395AC8EB404883C2 /* hat_beanie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_beanie.usdz; sourceTree = "<group>"; };
+		60EF5A657BCE1C8BAFC17F47 /* balloon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = balloon.usdz; sourceTree = "<group>"; };
+		633415010286CC3885373377 /* mailbox.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = mailbox.usdz; sourceTree = "<group>"; };
+		6490EDEF5DD20B220E9D4772 /* hat_party.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_party.usdz; sourceTree = "<group>"; };
+		651BCA50D6AE9978029B2E77 /* Placement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placement.swift; sourceTree = "<group>"; };
+		687F915A551362E6A21D9186 /* postcard_farm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_farm.jpg; sourceTree = "<group>"; };
+		69E3439555D87EE8B5560A22 /* trip_mushroom.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_mushroom.usdz; sourceTree = "<group>"; };
+		6C8628847BC06C986F84E802 /* RiserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiserApp.swift; sourceTree = "<group>"; };
+		6C94C980B8354665424A2BE0 /* ItemHunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHunt.swift; sourceTree = "<group>"; };
+		6D400C0E6BFCA8F8FA0E417D /* pine.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pine.usdz; sourceTree = "<group>"; };
+		6DE4D206722AC5CE9B76D140 /* sfx_coin.caf */ = {isa = PBXFileReference; path = sfx_coin.caf; sourceTree = "<group>"; };
+		6F20DBA28A46F3D18CABE246 /* glyph_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_3.usdz; sourceTree = "<group>"; };
+		7014AEC72196420192470CC3 /* hat_crown.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_crown.usdz; sourceTree = "<group>"; };
+		725A474EE1102C98DD129EE7 /* trip_moon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_moon.usdz; sourceTree = "<group>"; };
+		74C2BF7ACB8C784CE0468743 /* trip_woods.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_woods.usdz; sourceTree = "<group>"; };
+		773BE5F05C1F1840CF7FF503 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		79633967BAEE3AF7DE8F7E2C /* WorldScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScene.swift; sourceTree = "<group>"; };
+		79B5360E40228BDAD9354E74 /* AdventureViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureViews.swift; sourceTree = "<group>"; };
+		7B2D3C93A3AD91EE5EDB4254 /* well.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = well.usdz; sourceTree = "<group>"; };
+		7BC040C1BB09505355D21F7D /* isle_meadow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = isle_meadow.usdz; sourceTree = "<group>"; };
+		7CC844C6B9C47840EC542843 /* MissionAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionAvailability.swift; sourceTree = "<group>"; };
+		7F52611402F68C1413571808 /* swing.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = swing.usdz; sourceTree = "<group>"; };
+		7FD2AE82ADE0C17DBC16A7E8 /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
+		813B38B282F71D15BC7C275D /* crop_corn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_corn.usdz; sourceTree = "<group>"; };
+		813BBE3D9536EFE484274EC5 /* glyph_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_2.usdz; sourceTree = "<group>"; };
+		81E229A028EB10DE19A7CD7B /* boulders.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = boulders.usdz; sourceTree = "<group>"; };
+		82A3008C928F2DBABE8D7991 /* furn_poster_sun.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_poster_sun.usdz; sourceTree = "<group>"; };
+		837E96CC5624E04FA17D5B4D /* alarm_meadow.caf */ = {isa = PBXFileReference; path = alarm_meadow.caf; sourceTree = "<group>"; };
+		84DC8D5CF75E105B1D18C20A /* bridge.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bridge.usdz; sourceTree = "<group>"; };
+		86D6638E700EED73D5C72676 /* hat_frog.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_frog.usdz; sourceTree = "<group>"; };
+		87FAE728CA1EFF6931FBA8FE /* amb_rain.caf */ = {isa = PBXFileReference; path = amb_rain.caf; sourceTree = "<group>"; };
+		88B7AB8D5341D95DB5D412A2 /* tent_interior.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tent_interior.usdz; sourceTree = "<group>"; };
+		8912F29C3B01B80C0497BE1E /* picnic.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = picnic.usdz; sourceTree = "<group>"; };
+		89ED072F6D554D186DD0C6F3 /* Riser.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Riser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA8E531FB1FCB02C82CBF5F /* fountain.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fountain.usdz; sourceTree = "<group>"; };
+		8C7F726AADC9D914BBC42BD2 /* furn_beanbag.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_beanbag.usdz; sourceTree = "<group>"; };
+		8D8FED63F00FA5566B893207 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		944BE659E12ABA766746D467 /* crop_sunflower.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_sunflower.usdz; sourceTree = "<group>"; };
+		95727819FC1B62ED9A4A1B44 /* postcard_moon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_moon.jpg; sourceTree = "<group>"; };
+		965842B34AD22A7A25E3B564 /* glyph_E.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_E.usdz; sourceTree = "<group>"; };
+		98D2A8790AFABD1C7315A944 /* RiserWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = RiserWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D02D944C88728879AC7B48 /* Thumbnailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnailer.swift; sourceTree = "<group>"; };
+		9C63AA26BA5CEA0D14D15D55 /* glyph_S.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_S.usdz; sourceTree = "<group>"; };
+		9C84FD750B8E51A6BFC8A042 /* beehive.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = beehive.usdz; sourceTree = "<group>"; };
+		9D23AA89F56EBEFD4975DA65 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		A359DFCE249372196413A2ED /* alarm_sunrise.caf */ = {isa = PBXFileReference; path = alarm_sunrise.caf; sourceTree = "<group>"; };
+		A3E63067FDB389559A9FCF45 /* RiserWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiserWidgets.swift; sourceTree = "<group>"; };
+		A55E29E0CAB23C18F18DD78B /* glyph_8.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_8.usdz; sourceTree = "<group>"; };
+		A65C339689E806351DB3F349 /* furn_clock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_clock.usdz; sourceTree = "<group>"; };
+		A8005A9CBE99161FDF645ACD /* CloudClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudClock.swift; sourceTree = "<group>"; };
+		AB70DC0DAE081DCBB11657E4 /* crop_pumpkin.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_pumpkin.usdz; sourceTree = "<group>"; };
+		ABD9E743FB6DA9F4DEA5A1E4 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		ACF16522154BBAF4874B5D44 /* tent.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tent.usdz; sourceTree = "<group>"; };
+		AD1475C96B5E3A21A6E5E575 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1B1E3652FF573E9F717D5B3 /* glyph_A.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_A.usdz; sourceTree = "<group>"; };
+		B2E9F710B5954D4D1C8C585C /* postcard_woods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_woods.jpg; sourceTree = "<group>"; };
+		B61BE22BC6381243CC9CFFCD /* flowers.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flowers.usdz; sourceTree = "<group>"; };
+		B668DE5732048B89D61EB198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B84BB474FFC2C93302F435E2 /* postcard_mushroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_mushroom.jpg; sourceTree = "<group>"; };
+		B9822BC22C958A838F9AA836 /* paywall_hero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paywall_hero.jpg; sourceTree = "<group>"; };
+		BAD12A6CBB8C114152D50843 /* furn_aquarium.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_aquarium.usdz; sourceTree = "<group>"; };
+		BBA9C70F1071039237509EFA /* campfire.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = campfire.usdz; sourceTree = "<group>"; };
+		BC75FA03F403B66ABB8CFE90 /* tree_blossom.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree_blossom.usdz; sourceTree = "<group>"; };
+		BC999506F7C6E20320686D73 /* bird.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bird.usdz; sourceTree = "<group>"; };
+		BDC4FAB6A42D0E3D10A333CD /* alarm_bells.caf */ = {isa = PBXFileReference; path = alarm_bells.caf; sourceTree = "<group>"; };
+		C1FEA04060996AACE8CAFEC7 /* PerfProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfProbe.swift; sourceTree = "<group>"; };
+		C22D103A0F130AFBEFF34713 /* amb_night.caf */ = {isa = PBXFileReference; path = amb_night.caf; sourceTree = "<group>"; };
+		C3B86AA27D0E97D5B5037769 /* sfx_tap.caf */ = {isa = PBXFileReference; path = sfx_tap.caf; sourceTree = "<group>"; };
+		C45719DD02F62A6112A59660 /* bedroom.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bedroom.usdz; sourceTree = "<group>"; };
+		C4F3575D0195C288BC8C1494 /* food_cake.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = food_cake.usdz; sourceTree = "<group>"; };
+		C798A08A135152F0758A77A6 /* furn_teddy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_teddy.usdz; sourceTree = "<group>"; };
+		C7BF369D444B9E21B3066759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8EE74AA34D6E2255AFE3941 /* trip_peaks.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_peaks.usdz; sourceTree = "<group>"; };
+		C91DDBCC2706D08650E6F5DF /* Interior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interior.swift; sourceTree = "<group>"; };
+		CA3B1F43BF3BB913C7992475 /* isle_beach.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = isle_beach.usdz; sourceTree = "<group>"; };
+		CE663CB125D1E956B430E338 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		CECDF79463738CEF20B5819B /* EnvironmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.swift; sourceTree = "<group>"; };
+		D39D3477AD3F09C3FF7D9176 /* sprout.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sprout.usdz; sourceTree = "<group>"; };
+		D57953BCBA02E89ADA61201E /* glyph_0.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_0.usdz; sourceTree = "<group>"; };
+		D6D8D5DABDBE0F47D8DBCCC3 /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
+		D7E8313BC61981962BD64A1F /* pumpkins.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pumpkins.usdz; sourceTree = "<group>"; };
+		D8A7F7092AA2B01CD1344BBE /* gazebo.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gazebo.usdz; sourceTree = "<group>"; };
+		D9081E74B33D685DD543D2EA /* windmill.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = windmill.usdz; sourceTree = "<group>"; };
+		D9C310FC533F2FC4CB223DFB /* hat_pumpkin.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hat_pumpkin.usdz; sourceTree = "<group>"; };
+		DD90FBF07D89D5687E3EAE38 /* furn_plant.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_plant.usdz; sourceTree = "<group>"; };
+		E09F7C9EB76A0532AACC8FDC /* tree_round.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree_round.usdz; sourceTree = "<group>"; };
+		E2F0AE0B8AF5026F704C9F41 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		E4938B5BA669EF9543B8E514 /* sfx_rep.caf */ = {isa = PBXFileReference; path = sfx_rep.caf; sourceTree = "<group>"; };
+		E4EF9383709CA6B051555393 /* furn_shelf.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_shelf.usdz; sourceTree = "<group>"; };
+		E50D3CAE9B9DF9C5D98F5E52 /* postcard_meadow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = postcard_meadow.jpg; sourceTree = "<group>"; };
+		E597CDF98FCBB4AD70E0CA17 /* ModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibrary.swift; sourceTree = "<group>"; };
+		E95583B67AA24CE827D636A7 /* trip_meadow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trip_meadow.usdz; sourceTree = "<group>"; };
+		E9951F6EDD528AAD06653621 /* crop_carrot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = crop_carrot.usdz; sourceTree = "<group>"; };
+		ECF4EAF08FEEBAFCE13419FA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		ED464B5DA169312E0A000C2B /* glyph_9.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glyph_9.usdz; sourceTree = "<group>"; };
+		ED506DD7B80FC94D922386D5 /* CritterSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterSystem.swift; sourceTree = "<group>"; };
+		EE47A8A1F6295B66E30FCAD0 /* AlarmMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmMetadata.swift; sourceTree = "<group>"; };
+		EEA0C6C89358665E613ED380 /* furn_toychest.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furn_toychest.usdz; sourceTree = "<group>"; };
+		EF9883FEAB64228F73C9F065 /* hammock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hammock.usdz; sourceTree = "<group>"; };
+		EFF28DA743D874C324A4D323 /* garden.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = garden.usdz; sourceTree = "<group>"; };
+		F0B6E9D6AA0511F0B3B506B2 /* sfx_pet.caf */ = {isa = PBXFileReference; path = sfx_pet.caf; sourceTree = "<group>"; };
+		F141E72D442500CB06C9C3AA /* Career.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Career.swift; sourceTree = "<group>"; };
+		F233B55F0E04D35585B8C6CB /* BuildSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
+		F368DDCB7DA540A0487D956E /* cottage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cottage.usdz; sourceTree = "<group>"; };
+		F37F3FFBEE957599E9F8BE84 /* sfx_levelup.caf */ = {isa = PBXFileReference; path = sfx_levelup.caf; sourceTree = "<group>"; };
+		F49F22A509ABCDAF80ED66C6 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
+		FC607370C0B74D36C3AA30EF /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		FF6B2BBF784E3AA0E8D71E1D /* maple.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = maple.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC6171B241E7E8FE861F1D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F786B6184A2E7110BE671617 /* RevenueCat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F61AE79AA4C9677D4F4192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89ED072F6D554D186DD0C6F3 /* Riser.app */,
+				98D2A8790AFABD1C7315A944 /* RiserWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D4F9F2DDF0C6BC25D5AE64D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79B5360E40228BDAD9354E74 /* AdventureViews.swift */,
+				464A60BB4388A36A2DD5968A /* AlarmViews.swift */,
+				F233B55F0E04D35585B8C6CB /* BuildSheet.swift */,
+				56CA3911715788C58A5FB5E5 /* HomeView.swift */,
+				ABD9E743FB6DA9F4DEA5A1E4 /* JournalView.swift */,
+				8D8FED63F00FA5566B893207 /* MissionView.swift */,
+				ECF4EAF08FEEBAFCE13419FA /* OnboardingView.swift */,
+				E2F0AE0B8AF5026F704C9F41 /* PaywallView.swift */,
+				2048AD510FF4536A6B584506 /* RewardView.swift */,
+				AD1475C96B5E3A21A6E5E575 /* SettingsView.swift */,
+				4D26F6C92E1F7A5B4FD62CB1 /* TrialPaywallView.swift */,
+				99ABFD23A71F702E153BF3BF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F65920788EA45BF172675AD /* RiserWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B668DE5732048B89D61EB198 /* Info.plist */,
+				1A6D0A740EF9B7BD2543AAB6 /* PrivacyInfo.xcprivacy */,
+				A3E63067FDB389559A9FCF45 /* RiserWidgets.swift */,
+			);
+			path = RiserWidgets;
+			sourceTree = "<group>";
+		};
+		60F6B71146CDFF24F06B2221 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D4F241DC39DC776695158DE /* AlarmService.swift */,
+				CECDF79463738CEF20B5819B /* EnvironmentService.swift */,
+				4A8B582172D37B0D01D9578F /* Notifications.swift */,
+				4A8FCAE0B2A7C89AB8FF8133 /* PurchaseService.swift */,
+				1F801E09D5E84D93D2DFFF94 /* SkyModel.swift */,
+				FC607370C0B74D36C3AA30EF /* SoundService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64832B97337E8F869750A893 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9822BC22C958A838F9AA836 /* paywall_hero.jpg */,
+				493972A30D9686008FB04119 /* postcard_beach.jpg */,
+				153A3E5792C5830B56053DD3 /* postcard_caves.jpg */,
+				687F915A551362E6A21D9186 /* postcard_farm.jpg */,
+				08EC032CEA80F861CC9F63BF /* postcard_harbor.jpg */,
+				E50D3CAE9B9DF9C5D98F5E52 /* postcard_meadow.jpg */,
+				95727819FC1B62ED9A4A1B44 /* postcard_moon.jpg */,
+				B84BB474FFC2C93302F435E2 /* postcard_mushroom.jpg */,
+				39280958877DF8FEA3E2E13B /* postcard_peaks.jpg */,
+				B2E9F710B5954D4D1C8C585C /* postcard_woods.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7D1CA4851280E6652E296CFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				506B82CC46DB16EB01AE97D9 /* Achievements.swift */,
+				30F1BFB07ABFEAC619B30660 /* Adventures.swift */,
+				F49F22A509ABCDAF80ED66C6 /* AlarmItem.swift */,
+				3E576A211724FF920AAA03AD /* Buildables.swift */,
+				F141E72D442500CB06C9C3AA /* Career.swift */,
+				D6D8D5DABDBE0F47D8DBCCC3 /* Farm.swift */,
+				12875F913EAB4E837A7CFBE3 /* GameState.swift */,
+				C91DDBCC2706D08650E6F5DF /* Interior.swift */,
+				651BCA50D6AE9978029B2E77 /* Placement.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		922128A7D69711E4B5F6C59D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4FAB6A42D0E3D10A333CD /* alarm_bells.caf */,
+				837E96CC5624E04FA17D5B4D /* alarm_meadow.caf */,
+				A359DFCE249372196413A2ED /* alarm_sunrise.caf */,
+				1D1C00B42C0FB62F95810A62 /* amb_day.caf */,
+				C22D103A0F130AFBEFF34713 /* amb_night.caf */,
+				87FAE728CA1EFF6931FBA8FE /* amb_rain.caf */,
+				56C2FD2334C939C456447CDD /* music_island.caf */,
+				018A7E2039986FE7AF9AF0E6 /* sfx_build.caf */,
+				6DE4D206722AC5CE9B76D140 /* sfx_coin.caf */,
+				36A096B470B48325E5287E00 /* sfx_complete.caf */,
+				F37F3FFBEE957599E9F8BE84 /* sfx_levelup.caf */,
+				5EF65347681112526922A9EE /* sfx_nope.caf */,
+				F0B6E9D6AA0511F0B3B506B2 /* sfx_pet.caf */,
+				E4938B5BA669EF9543B8E514 /* sfx_rep.caf */,
+				C3B86AA27D0E97D5B5037769 /* sfx_tap.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		933ED24F7FC5DB1F7539F99A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B23243F4E609BEA071BA4B2A /* App */,
+				FBE1F3A5950D36C2480155D8 /* Missions */,
+				7D1CA4851280E6652E296CFB /* Model */,
+				60F6B71146CDFF24F06B2221 /* Services */,
+				1D4F9F2DDF0C6BC25D5AE64D /* Views */,
+				E8EEFA4CC3AD6700574375B5 /* World */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		99ABFD23A71F702E153BF3BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4635A564344460E138BCAAF2 /* Theme.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A82C85222169C8C2D25A3192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46348A6E2933944ACACDC285 /* archway.usdz */,
+				60EF5A657BCE1C8BAFC17F47 /* balloon.usdz */,
+				C45719DD02F62A6112A59660 /* bedroom.usdz */,
+				9C84FD750B8E51A6BFC8A042 /* beehive.usdz */,
+				3E7D43244F24E938731ED8E1 /* bench.usdz */,
+				BC999506F7C6E20320686D73 /* bird.usdz */,
+				81E229A028EB10DE19A7CD7B /* boulders.usdz */,
+				84DC8D5CF75E105B1D18C20A /* bridge.usdz */,
+				43EF9A62A43BF2A35586B7A5 /* bushes.usdz */,
+				3878B0AA1419D1933CF19729 /* butterfly.usdz */,
+				BBA9C70F1071039237509EFA /* campfire.usdz */,
+				1BEB116C3CE37DD2F32CD6FF /* cloud_a.usdz */,
+				09EA75701E911472EB648BD8 /* cloud_b.usdz */,
+				F368DDCB7DA540A0487D956E /* cottage.usdz */,
+				E9951F6EDD528AAD06653621 /* crop_carrot.usdz */,
+				813B38B282F71D15BC7C275D /* crop_corn.usdz */,
+				AB70DC0DAE081DCBB11657E4 /* crop_pumpkin.usdz */,
+				4F8D0A785BC16BC1CC2A8B66 /* crop_strawberry.usdz */,
+				944BE659E12ABA766746D467 /* crop_sunflower.usdz */,
+				554D6E2E752EB14D5E6908A2 /* crop_turnip.usdz */,
+				43DEF826F931AABBCC4539D1 /* farm_island.usdz */,
+				B61BE22BC6381243CC9CFFCD /* flowers.usdz */,
+				3D68425F55E37D4EEAEFD998 /* food_apple.usdz */,
+				C4F3575D0195C288BC8C1494 /* food_cake.usdz */,
+				4E5E1CE476032DC01D2D3DA8 /* food_soup.usdz */,
+				8BA8E531FB1FCB02C82CBF5F /* fountain.usdz */,
+				BAD12A6CBB8C114152D50843 /* furn_aquarium.usdz */,
+				1B507F7FDC821A8F2ED4D2DB /* furn_armchair.usdz */,
+				8C7F726AADC9D914BBC42BD2 /* furn_beanbag.usdz */,
+				A65C339689E806351DB3F349 /* furn_clock.usdz */,
+				0B9BF4CF1FCFE81EA7D024CB /* furn_desk.usdz */,
+				4121B6C905AF9DBDA7ECCE0B /* furn_floorlamp.usdz */,
+				0117F31EC5D423D291EFA5A6 /* furn_garland.usdz */,
+				DD90FBF07D89D5687E3EAE38 /* furn_plant.usdz */,
+				82A3008C928F2DBABE8D7991 /* furn_poster_sun.usdz */,
+				39F9DF454907EEA616BF9E9A /* furn_recordplayer.usdz */,
+				2FBE39DDE2D13A20C35BD6E6 /* furn_rocker.usdz */,
+				E4EF9383709CA6B051555393 /* furn_shelf.usdz */,
+				C798A08A135152F0758A77A6 /* furn_teddy.usdz */,
+				EEA0C6C89358665E613ED380 /* furn_toychest.usdz */,
+				EFF28DA743D874C324A4D323 /* garden.usdz */,
+				D8A7F7092AA2B01CD1344BBE /* gazebo.usdz */,
+				D57953BCBA02E89ADA61201E /* glyph_0.usdz */,
+				12B630912DCB37E328EC7063 /* glyph_1.usdz */,
+				813BBE3D9536EFE484274EC5 /* glyph_2.usdz */,
+				6F20DBA28A46F3D18CABE246 /* glyph_3.usdz */,
+				35956A70F7AB150C83DB9FD3 /* glyph_4.usdz */,
+				1347C39DE20B3D26DBB49D09 /* glyph_5.usdz */,
+				4D8FB06FC3BF6AA5507E1A98 /* glyph_6.usdz */,
+				5B80F2625F83E968D157E6AA /* glyph_7.usdz */,
+				A55E29E0CAB23C18F18DD78B /* glyph_8.usdz */,
+				ED464B5DA169312E0A000C2B /* glyph_9.usdz */,
+				B1B1E3652FF573E9F717D5B3 /* glyph_A.usdz */,
+				5B606ADEF2E72007A39735B0 /* glyph_colon.usdz */,
+				965842B34AD22A7A25E3B564 /* glyph_E.usdz */,
+				433D3DCBFBCE7133A194C8B6 /* glyph_I.usdz */,
+				458CAFD069DA2BBDAE2CA2E4 /* glyph_M.usdz */,
+				0D6B09FB49DFD742B778190D /* glyph_P.usdz */,
+				2AD7DCB77F254C6111255D1A /* glyph_R.usdz */,
+				9C63AA26BA5CEA0D14D15D55 /* glyph_S.usdz */,
+				EF9883FEAB64228F73C9F065 /* hammock.usdz */,
+				5F29A03A395AC8EB404883C2 /* hat_beanie.usdz */,
+				21CA18B954D83E9D744343E2 /* hat_bow.usdz */,
+				7014AEC72196420192470CC3 /* hat_crown.usdz */,
+				183C5215FB56D48E08AD0424 /* hat_explorer.usdz */,
+				493CA44F636A7FF94E9FE081 /* hat_flowercrown.usdz */,
+				86D6638E700EED73D5C72676 /* hat_frog.usdz */,
+				0E23798E3BF4E5B067C180DF /* hat_headphones.usdz */,
+				40E2730151B1E0BF2851F35E /* hat_maple.usdz */,
+				6490EDEF5DD20B220E9D4772 /* hat_party.usdz */,
+				D9C310FC533F2FC4CB223DFB /* hat_pumpkin.usdz */,
+				5BAB178B0106ACA4EB8CDE0C /* hat_straw.usdz */,
+				216BA338306673843DC54AAD /* hat_wizard.usdz */,
+				548CDACB1B0D2DA0D53E5AF4 /* island.usdz */,
+				CA3B1F43BF3BB913C7992475 /* isle_beach.usdz */,
+				7BC040C1BB09505355D21F7D /* isle_meadow.usdz */,
+				07D98C56F667C6753FD58FA4 /* lamppost.usdz */,
+				0EB0B1F7F82294A0207A280F /* lanterns.usdz */,
+				1CF61DD5CD428976A91844F3 /* lighthouse.usdz */,
+				633415010286CC3885373377 /* mailbox.usdz */,
+				FF6B2BBF784E3AA0E8D71E1D /* maple.usdz */,
+				8912F29C3B01B80C0497BE1E /* picnic.usdz */,
+				6D400C0E6BFCA8F8FA0E417D /* pine.usdz */,
+				34C04FB3BAFC8242DC989A23 /* pond.usdz */,
+				D7E8313BC61981962BD64A1F /* pumpkins.usdz */,
+				4C90AB10AF5814FDCD2FE22B /* scarecrow.usdz */,
+				21BBB745A152C3E9EDCE163B /* sickbed.usdz */,
+				0719EF62FA111660F808A916 /* signpost.usdz */,
+				D39D3477AD3F09C3FF7D9176 /* sprout.usdz */,
+				7F52611402F68C1413571808 /* swing.usdz */,
+				18D361F7AE37FDD97EE90A74 /* telescope.usdz */,
+				88B7AB8D5341D95DB5D412A2 /* tent_interior.usdz */,
+				ACF16522154BBAF4874B5D44 /* tent.usdz */,
+				BC75FA03F403B66ABB8CFE90 /* tree_blossom.usdz */,
+				E09F7C9EB76A0532AACC8FDC /* tree_round.usdz */,
+				4EF879C5069723A5555713B8 /* trip_beach.usdz */,
+				123CDCB2DA4491CEA0278D48 /* trip_caves.usdz */,
+				27583F5676126571DEE1E855 /* trip_harbor.usdz */,
+				E95583B67AA24CE827D636A7 /* trip_meadow.usdz */,
+				725A474EE1102C98DD129EE7 /* trip_moon.usdz */,
+				69E3439555D87EE8B5560A22 /* trip_mushroom.usdz */,
+				C8EE74AA34D6E2255AFE3941 /* trip_peaks.usdz */,
+				74C2BF7ACB8C784CE0468743 /* trip_woods.usdz */,
+				7B2D3C93A3AD91EE5EDB4254 /* well.usdz */,
+				D9081E74B33D685DD543D2EA /* windmill.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B23243F4E609BEA071BA4B2A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE663CB125D1E956B430E338 /* AppModel.swift */,
+				6C8628847BC06C986F84E802 /* RiserApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C8BE9D996377FF33FC345751 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EE47A8A1F6295B66E30FCAD0 /* AlarmMetadata.swift */,
+				9D23AA89F56EBEFD4975DA65 /* Mission.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DA8A148DB5EF2B86D555B6D5 = {
+			isa = PBXGroup;
+			children = (
+				E5048AF7592207F1FD0E783B /* Riser */,
+				4F65920788EA45BF172675AD /* RiserWidgets */,
+				C8BE9D996377FF33FC345751 /* Shared */,
+				14F61AE79AA4C9677D4F4192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6A659802B8DFAA34D00AB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64832B97337E8F869750A893 /* Images */,
+				A82C85222169C8C2D25A3192 /* Models */,
+				922128A7D69711E4B5F6C59D /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5048AF7592207F1FD0E783B /* Riser */ = {
+			isa = PBXGroup;
+			children = (
+				C7BF369D444B9E21B3066759 /* Assets.xcassets */,
+				773BE5F05C1F1840CF7FF503 /* PrivacyInfo.xcprivacy */,
+				DC6A659802B8DFAA34D00AB3 /* Resources */,
+				933ED24F7FC5DB1F7539F99A /* Sources */,
+			);
+			path = Riser;
+			sourceTree = "<group>";
+		};
+		E8EEFA4CC3AD6700574375B5 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				A8005A9CBE99161FDF645ACD /* CloudClock.swift */,
+				ED506DD7B80FC94D922386D5 /* CritterSystem.swift */,
+				E597CDF98FCBB4AD70E0CA17 /* ModelLibrary.swift */,
+				3EE6E9A17552272ACF382B17 /* NavGrid.swift */,
+				C1FEA04060996AACE8CAFEC7 /* PerfProbe.swift */,
+				18CE29D90B62DCEA8F3F9AC6 /* SproutController.swift */,
+				7FD2AE82ADE0C17DBC16A7E8 /* Textures.swift */,
+				99D02D944C88728879AC7B48 /* Thumbnailer.swift */,
+				79633967BAEE3AF7DE8F7E2C /* WorldScene.swift */,
+				5403BB3699EDF9140776EF7D /* WorldView.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		FBE1F3A5950D36C2480155D8 /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				6C94C980B8354665424A2BE0 /* ItemHunt.swift */,
+				7CC844C6B9C47840EC542843 /* MissionAvailability.swift */,
+				5327DD5BDCB041B26AE0284E /* PoseRepCounter.swift */,
+				35297F424E2EBF11E524547E /* RepCounters.swift */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D5AE50E3C59F1331F658B6A /* Riser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FC38732032D007ADADA201D /* Build configuration list for PBXNativeTarget "Riser" */;
+			buildPhases = (
+				B1D2A2C19D91E3CF82FF1A0C /* Release safety checks */,
+				7C448770CA4ADD3DFB623A6E /* Sources */,
+				E2FFBB2F5C0494CBA3C093A2 /* Resources */,
+				CC6171B241E7E8FE861F1D85 /* Frameworks */,
+				12A708D8CE0B693770E54D25 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7804CAC14F70C921FF9C58C6 /* PBXTargetDependency */,
+			);
+			name = Riser;
+			packageProductDependencies = (
+				D65CB8DE5E30FA9116FD608B /* RevenueCat */,
+			);
+			productName = Riser;
+			productReference = 89ED072F6D554D186DD0C6F3 /* Riser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8726C39290AF5AACECDAA2DD /* RiserWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C5ACA091A87B417337EE76 /* Build configuration list for PBXNativeTarget "RiserWidgets" */;
+			buildPhases = (
+				4DA83532E4E8000243264210 /* Sources */,
+				055CF04FF14893CB34EB8C28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiserWidgets;
+			packageProductDependencies = (
+			);
+			productName = RiserWidgets;
+			productReference = 98D2A8790AFABD1C7315A944 /* RiserWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FD9A56754B096C34055E3BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6D5AE50E3C59F1331F658B6A = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					8726C39290AF5AACECDAA2DD = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9CB39DD20E75812214CBE788 /* Build configuration list for PBXProject "Riser" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DA8A148DB5EF2B86D555B6D5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3A300ED5E2E547661D77AC3 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 14F61AE79AA4C9677D4F4192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D5AE50E3C59F1331F658B6A /* Riser */,
+				8726C39290AF5AACECDAA2DD /* RiserWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		055CF04FF14893CB34EB8C28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DE469672FD008750B11F38 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FFBB2F5C0494CBA3C093A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB64B2A6069E0C85B0B94882 /* Assets.xcassets in Resources */,
+				99AA9F220F812C37249FF225 /* PrivacyInfo.xcprivacy in Resources */,
+				4F6C1AD8A9E282DC23E369DE /* alarm_bells.caf in Resources */,
+				B359F6A3C02A132268817D9F /* alarm_meadow.caf in Resources */,
+				9DE3B0B96DE82EB2D0631199 /* alarm_sunrise.caf in Resources */,
+				AE3FBD111EDAC827019F3434 /* amb_day.caf in Resources */,
+				6B805BB9E125788B05A5C4EB /* amb_night.caf in Resources */,
+				F6A0F99BF0CEFE870C3B54F9 /* amb_rain.caf in Resources */,
+				1E298D6D3944223918E0D724 /* archway.usdz in Resources */,
+				00A32F02452C1F0F4615856F /* balloon.usdz in Resources */,
+				10E5AB95E8BFD5FD8F0B6E93 /* bedroom.usdz in Resources */,
+				8DD1D2BF09E28B44473529AA /* beehive.usdz in Resources */,
+				612CDEBDD912121580A95D88 /* bench.usdz in Resources */,
+				79BA2D9810A322C64DC98293 /* bird.usdz in Resources */,
+				33CBD7D89E2E0882DE6568EA /* boulders.usdz in Resources */,
+				A625F6E1CEF9E2476DD7D452 /* bridge.usdz in Resources */,
+				F7CF4497B3B635241A5795C1 /* bushes.usdz in Resources */,
+				1DB79D3B0704E8C9AAE4D497 /* butterfly.usdz in Resources */,
+				3C3E5E3255BB9B9A08933C47 /* campfire.usdz in Resources */,
+				2950E9203CEA911A3E0F537F /* cloud_a.usdz in Resources */,
+				0EFE09FD2FD20E800D65BEEB /* cloud_b.usdz in Resources */,
+				C6FE520531D8A5C7797CDF9F /* cottage.usdz in Resources */,
+				EE735024223DA7432473E6CD /* crop_carrot.usdz in Resources */,
+				2867D3D78816D8A7DD3C57AF /* crop_corn.usdz in Resources */,
+				BCE95FC8E3FBD9BCEBCD16AA /* crop_pumpkin.usdz in Resources */,
+				4A5F7CDC9D6E12391845DC01 /* crop_strawberry.usdz in Resources */,
+				44A254D6C4402B86771C863E /* crop_sunflower.usdz in Resources */,
+				3F3B27F27428CB84CBFE006C /* crop_turnip.usdz in Resources */,
+				D4669C2FF5C5F6865F6BC6B2 /* farm_island.usdz in Resources */,
+				14115008CB852F7013817400 /* flowers.usdz in Resources */,
+				80825B32C18428D8F4413E6F /* food_apple.usdz in Resources */,
+				58AC8C16A5965B37BE1DC12D /* food_cake.usdz in Resources */,
+				CA76E956E45793DACAEDE921 /* food_soup.usdz in Resources */,
+				0B1110461F9D85683A346E0B /* fountain.usdz in Resources */,
+				69D4A58ADD220E585FA93C0E /* furn_aquarium.usdz in Resources */,
+				D48463194918A8662520EC8B /* furn_armchair.usdz in Resources */,
+				A1576469C7AC6D12CED6450D /* furn_beanbag.usdz in Resources */,
+				EEFCD75F9AE31FDDEDA1F6B8 /* furn_clock.usdz in Resources */,
+				946C6EC34CD63F881507C6A1 /* furn_desk.usdz in Resources */,
+				616789422BD6C63580EAA879 /* furn_floorlamp.usdz in Resources */,
+				6E320A2E007059C8E9ACD083 /* furn_garland.usdz in Resources */,
+				603EBE13C0E272C46D6942C9 /* furn_plant.usdz in Resources */,
+				5353B57176232A74092B4533 /* furn_poster_sun.usdz in Resources */,
+				361EBF7745BD7AA3BDAF61A4 /* furn_recordplayer.usdz in Resources */,
+				F0EA9E063A8B81E0C4A4FF9B /* furn_rocker.usdz in Resources */,
+				D0C534C1C41F564A2BE21BE7 /* furn_shelf.usdz in Resources */,
+				1BE329AB42ED27AB6EB95FBB /* furn_teddy.usdz in Resources */,
+				3DA8F29066D3EE4F46F80C57 /* furn_toychest.usdz in Resources */,
+				211A5B5F3D49CE4E323430A7 /* garden.usdz in Resources */,
+				A99C3D83F7D0C33C45F8D493 /* gazebo.usdz in Resources */,
+				2D8101839BB2039397F84230 /* glyph_0.usdz in Resources */,
+				ABA1E33C93CD3DC7D7D8EF8E /* glyph_1.usdz in Resources */,
+				574FBBDC367A42D5B43896D7 /* glyph_2.usdz in Resources */,
+				EBA2FB3BC3000156A5A16593 /* glyph_3.usdz in Resources */,
+				B75E5769958D92AC98F2556C /* glyph_4.usdz in Resources */,
+				AC9BCD107D00F8CD5683C2C8 /* glyph_5.usdz in Resources */,
+				1FDBE1BAB9B60C9E0D988A4E /* glyph_6.usdz in Resources */,
+				63E23C93C2DDFC4C4DECF5CE /* glyph_7.usdz in Resources */,
+				606239000ADF11949FEAE959 /* glyph_8.usdz in Resources */,
+				A10A2E1DD797939818B60BCB /* glyph_9.usdz in Resources */,
+				5325E9EA072C5FE2A13557A1 /* glyph_A.usdz in Resources */,
+				4D96B0B083204BAEEF6605C8 /* glyph_E.usdz in Resources */,
+				53786DF8C3B223ECF817304C /* glyph_I.usdz in Resources */,
+				BC49060ECC9D2E32CC6F8409 /* glyph_M.usdz in Resources */,
+				4C8A5D1F0655FB6A8118C935 /* glyph_P.usdz in Resources */,
+				BBCFA0C274A0DDEEF6493CA2 /* glyph_R.usdz in Resources */,
+				EC406753A50C6B6CEAE897F5 /* glyph_S.usdz in Resources */,
+				BB75C351870407B0FD8E2A07 /* glyph_colon.usdz in Resources */,
+				116B6350C8F5344B4F1D27A9 /* hammock.usdz in Resources */,
+				8655935431E09276CA86E44A /* hat_beanie.usdz in Resources */,
+				1491048095445AE5DEA52750 /* hat_bow.usdz in Resources */,
+				F078CB440FB068F49487ED35 /* hat_crown.usdz in Resources */,
+				259E638B052D6F01E9290888 /* hat_explorer.usdz in Resources */,
+				A1C51C3CAE5B7C0F2C258625 /* hat_flowercrown.usdz in Resources */,
+				D3FFC173FA72D175C5F101EF /* hat_frog.usdz in Resources */,
+				6A15EFFB53B39E3D978D3CA3 /* hat_headphones.usdz in Resources */,
+				D24D125DB240C2928F945AA1 /* hat_maple.usdz in Resources */,
+				92866F8C8831ADEE5408037D /* hat_party.usdz in Resources */,
+				BBC47EA11CE4F32625FE5F4E /* hat_pumpkin.usdz in Resources */,
+				D7D2C848DB06A8F5D9A6EFFF /* hat_straw.usdz in Resources */,
+				EC87CE6908F3CFF6E8CA98D1 /* hat_wizard.usdz in Resources */,
+				79A08E452E6FD6933588B231 /* island.usdz in Resources */,
+				D6F0AB5B83CE7183C7B533C3 /* isle_beach.usdz in Resources */,
+				E1EF29AB5B5839482D80F94C /* isle_meadow.usdz in Resources */,
+				9208A50D264DB74B9A097010 /* lamppost.usdz in Resources */,
+				64F9DC85BF690EA3014F0DA7 /* lanterns.usdz in Resources */,
+				F5B72C22545D645199FEADD7 /* lighthouse.usdz in Resources */,
+				32778943DD5A988510986EB7 /* mailbox.usdz in Resources */,
+				0F7BB14BCDC67C214B7259B3 /* maple.usdz in Resources */,
+				36C4E85B37EB910E48CA0DF9 /* music_island.caf in Resources */,
+				2876DFBE2AE082C77CD92332 /* paywall_hero.jpg in Resources */,
+				AED714ABB9559D63CF49840C /* picnic.usdz in Resources */,
+				110495112D50E763B310F588 /* pine.usdz in Resources */,
+				2C25D964143914D95FA3C99F /* pond.usdz in Resources */,
+				FF04CF5196E7F8C47DC16936 /* postcard_beach.jpg in Resources */,
+				C9B752B79093D4E94802CFD5 /* postcard_caves.jpg in Resources */,
+				CD39803AD3181411761ED75C /* postcard_farm.jpg in Resources */,
+				D482B9C8BB11F5EDFEB12631 /* postcard_harbor.jpg in Resources */,
+				8B091D09D3A75FEE9E1A1F4F /* postcard_meadow.jpg in Resources */,
+				9D75CD6949CFC30D1FB774EA /* postcard_moon.jpg in Resources */,
+				B870F078E8064FFDE047494D /* postcard_mushroom.jpg in Resources */,
+				C03FFB3EEA2683C2093F0BAD /* postcard_peaks.jpg in Resources */,
+				4D3165DD049A3695D3499F05 /* postcard_woods.jpg in Resources */,
+				A9B9DE05DB1BCD1D2072D7B3 /* pumpkins.usdz in Resources */,
+				088C7B7DBE8B906D3C7E8170 /* scarecrow.usdz in Resources */,
+				0C97BDC402C42B8355DF0342 /* sfx_build.caf in Resources */,
+				4792B54E11D783621416EFF4 /* sfx_coin.caf in Resources */,
+				4A730BFE420A4F7C2B4C3B11 /* sfx_complete.caf in Resources */,
+				3D98A0B4F889F0AB1D2A6534 /* sfx_levelup.caf in Resources */,
+				2745ACB1E63677E6D8067067 /* sfx_nope.caf in Resources */,
+				28B72457957C11F8A2DDA925 /* sfx_pet.caf in Resources */,
+				C11A08496E353798FEBCB90E /* sfx_rep.caf in Resources */,
+				4FEACB1123C59CA86097FBA8 /* sfx_tap.caf in Resources */,
+				D205EAED34CEAEB0BF134318 /* sickbed.usdz in Resources */,
+				012AA752FDD2CF6C59DC0057 /* signpost.usdz in Resources */,
+				C64312FDBD597204D1D56914 /* sprout.usdz in Resources */,
+				F68F37A31EF108F4EEC9EE3A /* swing.usdz in Resources */,
+				81D9E678834455377AE3F67E /* telescope.usdz in Resources */,
+				F2B8A57E379215DD5AF8FD3C /* tent.usdz in Resources */,
+				251814C906C489162D1C6AFD /* tent_interior.usdz in Resources */,
+				06D33FE95B14360A62BF48EC /* tree_blossom.usdz in Resources */,
+				F950406BE691439C5B16B7FE /* tree_round.usdz in Resources */,
+				4810744EE21B942E1D5796FA /* trip_beach.usdz in Resources */,
+				5ECDA48B3471FCC4AD89787A /* trip_caves.usdz in Resources */,
+				12A8895789C139D6565B2080 /* trip_harbor.usdz in Resources */,
+				EA2F835D92B009C0A146FA74 /* trip_meadow.usdz in Resources */,
+				7039E6330AD8399995CAF6B4 /* trip_moon.usdz in Resources */,
+				E4B87468634880AD3267C13B /* trip_mushroom.usdz in Resources */,
+				AB6A438AB1E086B7A5943967 /* trip_peaks.usdz in Resources */,
+				F0FB5E79218C82B9944C19BF /* trip_woods.usdz in Resources */,
+				8EF58FA88BFA5D5F16E37817 /* well.usdz in Resources */,
+				82699010853963FCE016347A /* windmill.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1D2A2C19D91E3CF82FF1A0C /* Release safety checks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Riser/Sources/Services/PurchaseService.swift",
+			);
+			name = "Release safety checks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Never archive a build whose purchases can't work (App Review would reject it).\nif [ \"$CONFIGURATION\" = \"Release\" ] && grep -q \"appl_REPLACE\" \"$SRCROOT/Riser/Sources/Services/PurchaseService.swift\"; then\n  echo \"error: Paste your RevenueCat Apple API key (appl_...) into Config.revenueCatAPIKey in PurchaseService.swift before archiving.\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DA83532E4E8000243264210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867432CA8591C5ED4A676A15 /* AlarmMetadata.swift in Sources */,
+				9D91A9B5AB77B09054713214 /* Mission.swift in Sources */,
+				D9BB54D4B789A8553EDC8EC2 /* RiserWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C448770CA4ADD3DFB623A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612FB44336B0FAB58794BEC0 /* Achievements.swift in Sources */,
+				FD4C069D7BCF638BB49AE605 /* AdventureViews.swift in Sources */,
+				FF025FFE3A0196E6CBD5D9F5 /* Adventures.swift in Sources */,
+				861D9AF748B6DCC8CB832687 /* AlarmItem.swift in Sources */,
+				7712B58196BCB44032C37C44 /* AlarmMetadata.swift in Sources */,
+				0657442AA8559A3AA06F2916 /* AlarmService.swift in Sources */,
+				3F2DF584272466385E113C10 /* AlarmViews.swift in Sources */,
+				EC2AA05E35CAC06E7A2E466A /* AppModel.swift in Sources */,
+				E97A45C020365754E4B0101C /* BuildSheet.swift in Sources */,
+				342502635F51F39BF9E80316 /* Buildables.swift in Sources */,
+				53C0F7514FB926910E53BAF2 /* Career.swift in Sources */,
+				13EB55504B8AB309280C526A /* CloudClock.swift in Sources */,
+				D671EB7168EA731FC6160067 /* CritterSystem.swift in Sources */,
+				DEC1EC090477E98268600F22 /* EnvironmentService.swift in Sources */,
+				5A962A286DB276D72FC4EBEB /* Farm.swift in Sources */,
+				9C68136A7E7838CDDBF86E16 /* GameState.swift in Sources */,
+				6D4185E103BDCE0795A730E5 /* HomeView.swift in Sources */,
+				35E17385DA4BC7466F47CA0E /* Interior.swift in Sources */,
+				684E6520E41E9B56A485B95B /* ItemHunt.swift in Sources */,
+				57C65229CC0543B822430BE3 /* JournalView.swift in Sources */,
+				22F0FD92AA8CC095D0B96BF3 /* Mission.swift in Sources */,
+				8BF79E6CDD71FE0382F0409A /* MissionAvailability.swift in Sources */,
+				41485BD44F458CEBF45E0C03 /* MissionView.swift in Sources */,
+				1AEB84FE9A7ACA19FB40EBA3 /* ModelLibrary.swift in Sources */,
+				0745AC16D8F1E36CC5C2AB5F /* NavGrid.swift in Sources */,
+				A21F8E10383B4342E7093206 /* Notifications.swift in Sources */,
+				73778DEE914AEEE78EC72225 /* OnboardingView.swift in Sources */,
+				0619FD193855C84A03924530 /* PaywallView.swift in Sources */,
+				6518F75343D3A533A934A670 /* PerfProbe.swift in Sources */,
+				088621FD3C08C7AE9B0787F5 /* Placement.swift in Sources */,
+				9847368A0509E6EA816AE6BC /* PoseRepCounter.swift in Sources */,
+				F835B45C7D332D6D1C59C443 /* PurchaseService.swift in Sources */,
+				E163FC0082D090C10EDF02B3 /* RepCounters.swift in Sources */,
+				8BC55DCC7A94474B0D532409 /* RewardView.swift in Sources */,
+				B8F6870AE153F076CFB3032B /* RiserApp.swift in Sources */,
+				44B7E89BA3B5FDB10B640162 /* SettingsView.swift in Sources */,
+				750E0E6082E20BD150B59FCE /* SkyModel.swift in Sources */,
+				00C5F333FF572CB8C1074106 /* SoundService.swift in Sources */,
+				77DA85DB8C57C89D9A1E820D /* SproutController.swift in Sources */,
+				7140AE069CFEDE24654BBF3E /* Textures.swift in Sources */,
+				AD2CA80D5AEA2F84029152C7 /* Theme.swift in Sources */,
+				B7470D08571267589A9DA808 /* Thumbnailer.swift in Sources */,
+				EE5CF229DF9B0185FC5C7D3B /* TrialPaywallView.swift in Sources */,
+				60DDFF2C1A0DC8ACEE053742 /* WorldScene.swift in Sources */,
+				A6B94B81528466B6CCCBC915 /* WorldView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7804CAC14F70C921FF9C58C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8726C39290AF5AACECDAA2DD /* RiserWidgets */;
+			targetProxy = BA48858C371FB2CA9A95E84E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D077091AB98D926DFEDB170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RiserWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrellera.riser.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6019A96367A368E705552FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 22;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6BB115C93DF2070C82131BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RiserWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrellera.riser.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AB8D8AE993550A422697D8D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Riser/Riser.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Riser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrellera.riser;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EC2DE25C206D31C37D27A7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 22;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FBBBD3A84BF9BED70FFF5915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Riser/Riser.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Riser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesrellera.riser;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C5ACA091A87B417337EE76 /* Build configuration list for PBXNativeTarget "RiserWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D077091AB98D926DFEDB170 /* Debug */,
+				6BB115C93DF2070C82131BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FC38732032D007ADADA201D /* Build configuration list for PBXNativeTarget "Riser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBBD3A84BF9BED70FFF5915 /* Debug */,
+				AB8D8AE993550A422697D8D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9CB39DD20E75812214CBE788 /* Build configuration list for PBXProject "Riser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6019A96367A368E705552FA4 /* Debug */,
+				EC2DE25C206D31C37D27A7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3A300ED5E2E547661D77AC3 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D65CB8DE5E30FA9116FD608B /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3A300ED5E2E547661D77AC3 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FD9A56754B096C34055E3BE /* Project object */;
+}

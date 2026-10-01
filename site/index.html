@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riser: Alarm Buddy · Wake up. For real.</title>
+<meta name="description" content="Riser is the alarm you can't snooze. Move to turn it off — camera-counted push-ups, squats, item hunts and more — and a little sprout goes to work every morning you get up.">
+<meta name="theme-color" content="#3f7fe0">
+<meta property="og:title" content="Riser · Wake up. For real.">
+<meta property="og:description" content="The alarm you can't snooze, with a little friend who's counting on you.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="apple-touch-icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+    "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/index.js",
+    "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/ScrollTrigger.js",
+    "gsap/SplitText": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/SplitText.js",
+    "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.mjs"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/icon-256.png" alt="">Riser</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="/support">Support</a>
+      <a class="btn small" href="#pricing">Try it free</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO: the real island, live in 3D, under your sky ============ -->
+  <section class="hero" id="hero">
+    <canvas id="island" aria-hidden="true"></canvas>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap copy">
+      <span class="pill" data-hero-fade><b>NEW</b> The alarm clock you can't snooze</span>
+      <h1 id="hero-title"><span class="line">Wake up.</span><span class="line"><em>For real.</em></span></h1>
+      <p class="sub" data-hero-fade>Move to turn it off. Every morning you do, a tiny sprout heads off to work, and your little world grows.</p>
+      <div class="ctas" data-hero-fade>
+        <a class="btn sun" href="#pricing" data-magnetic>Try it free for 3 days <span class="arrow">→</span></a>
+        <a class="btn glass" href="#how" data-magnetic>See how it works</a>
+      </div>
+    </div>
+    <div class="skybar" data-hero-fade>
+      <span class="label" id="sky-label">Your sky, right now</span>
+      <div class="seg" role="group" aria-label="Preview the island's sky">
+        <button data-sky="dawn">Dawn</button><button data-sky="day">Day</button><button data-sky="dusk">Dusk</button><button data-sky="night">Night</button>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><i></i>Scroll</div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="wrap">
+      <span class="eyebrow">Why Riser</span>
+      <p data-scrub>Snoozing feels good for nine minutes. Riser makes getting up feel better. Do ten push-ups, find one thing around the house, or crack a little math, and a tiny sprout <span class="inline" aria-hidden="true"><img src="assets/icon.png" alt=""></span> heads off to work, because <em>you</em> got up.</p>
+    </div>
+  </section>
+
+  <!-- ============ SHOWCASE: pinned iPhone ============ -->
+  <section class="showcase" id="how">
+    <div class="wrap grid">
+      <div class="steps">
+        <article class="step active" data-step="0">
+          <div class="num">01 · The alarm</div>
+          <h3>Wake up with a <em>mission.</em></h3>
+          <p class="body-lg">When the alarm rings, tap Start Mission. Your camera counts push-ups or squats live, or go hunt for one thing around the house. It stops when you're really up.</p>
+          <div class="mobile-shot"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/pushup.jpg" alt="Mission screen: 10 push-ups to silence the alarm."></div></div></div></div>
+        </article>
+        <article class="step" data-step="1">
+          <div class="num">02 · The payoff</div>
+          <h3>Your buddy heads off to <em>work.</em></h3>
+          <p class="body-lg">Win the morning and your buddy rides a balloon to the Farm Island for a shift, harvesting the crops that only grow when you get up. Every shift earns coins and XP, with a promotion the more mornings you win together.</p>
+          <div class="mobile-shot"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/reward.jpg" alt="Good morning shift report with XP and coins."></div></div></div></div>
+        </article>
+        <article class="step" data-step="2">
+          <div class="num">03 · The world</div>
+          <h3>Build your little <em>world.</em></h3>
+          <p class="body-lg">Spend coins on 30 things to build and place them anywhere. Buy new isles across rope bridges, and decorate a cozy room from a market that changes every day.</p>
+          <div class="mobile-shot"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/isles.jpg" alt="Meadow Isle with a gazebo and fountain."></div></div></div></div>
+        </article>
+        <article class="step" data-step="3">
+          <div class="num">04 · The night</div>
+          <h3>Then, sleep on <em>time.</em></h3>
+          <p class="body-lg">Riser counts back five sleep cycles from your alarm. At bedtime your buddy walks inside and goes to sleep, and gently suggests you do too.</p>
+          <div class="mobile-shot"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/night.jpg" alt="The island at night with your buddy asleep."></div></div></div></div>
+        </article>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="halo" id="halo"></div>
+        <div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span>
+          <img class="on" src="assets/screens/pushup.jpg" alt="">
+          <img src="assets/screens/reward.jpg" alt="">
+          <img src="assets/screens/isles.jpg" alt="">
+          <img src="assets/screens/night.jpg" alt="">
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Push-ups</span><span>Squats</span><span>Item Hunt</span><span>Brain warm-up</span><span>No snooze</span>
+      <span>Push-ups</span><span>Squats</span><span>Item Hunt</span><span>Brain warm-up</span><span>No snooze</span>
+    </div>
+  </div>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="wrap">
+      <header>
+        <div>
+          <span class="eyebrow">Features</span>
+          <h2 class="title" data-split style="margin-top:18px">Everything it takes<br>to <em>rise.</em></h2>
+        </div>
+        <p class="body-lg" data-reveal>Built from the ground up for iPhone, with Apple's own alarms, on-device Vision and a world rendered live in 3D.</p>
+      </header>
+
+      <div class="bento">
+        <article class="card c7 tall warm" data-reveal data-tilt>
+          <span class="tag">Missions</span>
+          <h3>Reps, counted by your <em>camera.</em></h3>
+          <p>Apple's Vision framework tracks your elbows and knees in real time. Nothing is recorded, ever.</p>
+          <div class="peek"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/pushup.jpg" alt="" loading="lazy"></div></div></div></div>
+        </article>
+        <article class="card c5 tall dark" data-reveal data-tilt>
+          <span class="tag">Real sky</span>
+          <h3>Your sky, <em>for real.</em></h3>
+          <p>The sun, the moon's phase and the weather on your island match the sky outside your window.</p>
+          <div class="peek"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/night.jpg" alt="" loading="lazy"></div></div></div></div>
+        </article>
+        <article class="card c4" data-reveal data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></div>
+          <h3>Item <em>Hunt.</em></h3>
+          <p>"Find a mug." Can't see one? Tap to try another item. Out of bed and looking around, in seconds.</p>
+        </article>
+        <article class="card c4" data-reveal data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div>
+          <h3>A bedtime <em>coach.</em></h3>
+          <p>Five 90-minute sleep cycles, counted back from your alarm, with a gentle wind-down nudge.</p>
+        </article>
+        <article class="card c4 leaf" data-reveal data-tilt>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19c3-1.5 6-1.5 9 0s6 1.5 9 0"/><path d="M12 17V9"/><path d="M12 9c-1-3-4-4-7-3 2 .5 4 1.5 5 3"/><path d="M12 9c1-3 4-4 7-3-2 .5-4 1.5-5 3"/></svg></div>
+          <h3>Three <em>islands.</em></h3>
+          <p>30 things to build, placed wherever you like, across isles joined by rope bridges.</p>
+        </article>
+        <article class="card c6 tall" data-reveal data-tilt>
+          <span class="tag">Home</span>
+          <h3>Make the house a <em>home.</em></h3>
+          <p>Furniture, wallpaper and hats from a market that restocks every day.</p>
+          <div class="peek"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/inside.jpg" alt="" loading="lazy"></div></div></div></div>
+        </article>
+        <article class="card c6 tall" data-reveal data-tilt>
+          <span class="tag">Your plan</span>
+          <h3>Results from your own <em>numbers.</em></h3>
+          <p>Tell Riser when you get up now and when you want to. See exactly how much morning you win back.</p>
+          <div class="peek"><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/plan.jpg" alt="" loading="lazy"></div></div></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCOUNTABILITY ============ -->
+  <section class="night">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow" style="color:rgba(255,255,255,.6)">Gentle accountability</span>
+        <h2 class="display" data-split style="margin-top:20px">Sleep in?<br><em>Your buddy feels it.</em></h2>
+        <p class="body-lg" data-reveal style="margin-top:26px">Your buddy doesn't nag. It just has a worse day: crops wilt and a little gloom cloud rolls in. One good morning makes it better, and everything you've built stays yours.</p>
+        <ul class="ladder" data-reveal>
+          <li><span>1 missed morning</span><span>The crops wilt</span></li>
+          <li><span>2 in a row</span><span>A little gloom cloud follows your buddy</span></li>
+          <li><span>3 in a row</span><span>Your buddy catches a cold</span></li>
+          <li><span>1 good morning</span><span>All better ☀️</span></li>
+        </ul>
+      </div>
+      <div data-reveal><div class="device"><div class="device__frame"><div class="device__screen"><span class="device__island"></span><img src="assets/screens/sick.jpg" alt="Your buddy sick in bed under a small gloom cloud." loading="lazy"></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY ============ -->
+  <section class="privacy" id="privacy">
+    <div class="wrap">
+      <span class="eyebrow">Privacy</span>
+      <h2 class="title" data-split style="margin-top:18px;max-width:900px">Your camera never leaves <em>your iPhone.</em></h2>
+      <div class="row">
+        <div data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg><h4>On-device</h4><p>Frames are analysed in memory and never saved or uploaded.</p></div>
+        <div data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m6 6 12 12"/></svg><h4>No ads</h4><p>Not now, not ever.</p></div>
+        <div data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10 10 0 0 1 12 5c5 0 9 4.5 10 7-.4 1-1.3 2.4-2.6 3.7M6.6 6.6C4.3 8 2.7 10.3 2 12c1 2.5 5 7 10 7 1.9 0 3.6-.6 5-1.5"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><h4>No tracking</h4><p>No analytics SDKs. No advertising ID.</p></div>
+        <div data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/></svg><h4>No account</h4><p>Your island lives on your iPhone.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="title" data-split style="margin-top:18px">Start free. <em>Rise daily.</em></h2>
+        <p class="body-lg" data-reveal>Try everything for 3 days. We'll remind you the day before your trial ends.</p>
+      </div>
+      <div class="plans">
+        <div class="plan" data-reveal>
+          <h3>Monthly</h3>
+          <p class="price">$4.99<small> / month</small></p>
+          <p class="note">Flexible. Cancel anytime.</p>
+          <ul><li>Every mission</li><li>Your sprout and all 3 islands</li><li>Bedtime coach and real sky</li></ul>
+          <a class="btn light" style="box-shadow: inset 0 0 0 1px var(--line)" href="#download">Get Riser</a>
+        </div>
+        <div class="plan best" data-reveal>
+          <span class="badge">3 DAYS FREE</span>
+          <h3>Yearly</h3>
+          <p class="price">$29.99<small> / year</small></p>
+          <p class="note">Save 50% vs monthly.</p>
+          <ul><li>Everything in Riser</li><li>3-day free trial</li><li>A reminder before you're charged</li></ul>
+          <a class="btn sun" href="#download" data-magnetic>Start free trial <span class="arrow">→</span></a>
+        </div>
+        <div class="plan" data-reveal>
+          <h3>Lifetime</h3>
+          <p class="price">$59.99<small> once</small></p>
+          <p class="note">Pay once, rise forever.</p>
+          <ul><li>Everything, forever</li><li>Future islands and events</li><li>No subscription</li></ul>
+          <a class="btn light" style="box-shadow: inset 0 0 0 1px var(--line)" href="#download">Get Lifetime</a>
+        </div>
+      </div>
+      <div class="why" data-reveal>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+        <span><strong>Why it costs money:</strong> Riser has no ads and never sells your data. Your subscription keeps it that way, and pays for new islands, missions and seasonal events.</span>
+      </div>
+      <p class="fine">US prices shown; local prices may vary. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period. Manage in Settings › Apple Account › Subscriptions. <a href="/terms">Terms of Use</a> · <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow">FAQ</span>
+        <h2 class="title" data-split style="margin-top:18px">Questions,<br><em>answered.</em></h2>
+      </div>
+      <div>
+        <details><summary>Will it ring if my phone is on Silent? <i></i></summary><div class="answer"><p>Yes. Riser uses Apple's AlarmKit, the same system alarms as the Clock app, so it rings through Silent mode and Focus.</p></div></details>
+        <details><summary>What if I can't do push-ups? <i></i></summary><div class="answer"><p>Pick squats, an Item Hunt or a quick brain warm-up instead. Only do movements you're comfortable with.</p></div></details>
+        <details><summary>Does Riser record me? <i></i></summary><div class="answer"><p>No. Camera frames are analysed in memory on your iPhone by Apple's Vision framework and are never saved or uploaded.</p></div></details>
+        <details><summary>What happens if I miss a morning? <i></i></summary><div class="answer"><p>Your buddy has a gloomier day and the crops wilt, and after a few misses your buddy is sick in bed. One good morning makes it better, and everything you've built stays yours.</p></div></details>
+        <details><summary>How do I cancel? <i></i></summary><div class="answer"><p>Any time in Settings › [your name] › Subscriptions on your iPhone. Cancel during the free trial and you won't be charged.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL ============ -->
+  <section class="final" id="download">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="wrap">
+      <img class="icon" src="assets/icon.png" alt="Riser app icon" data-reveal>
+      <h2 class="display" data-split>Tomorrow starts<br><em>tonight.</em></h2>
+      <p data-reveal>Set your alarm, meet your sprout, and wake up for real.</p>
+      <div data-reveal><a class="btn light" href="https://apps.apple.com/app/id6817230193" data-magnetic aria-label="Download Riser on the App Store">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.62c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.54 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.47-.03-.01-2.3-.88-2.29-3.52zM14.2 6.16c.6-.73 1.01-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg>
+        Download on the App Store</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div><a class="brand" href="#top"><img src="assets/icon-256.png" alt="">Riser</a><p class="tagline">The alarm you can't snooze, with a little friend who's counting on you.</p></div>
+      <nav><a href="#how">How it works</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+    </div>
+    <div class="bottom">
+      <span>© <span id="y">2026</span> Riser. Only do movements you're comfortable with. Bedtime tips are general wellness advice, not medical advice.</span>
+      <span>Weather data by <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple EULA</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

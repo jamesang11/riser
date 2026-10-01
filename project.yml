@@ -1,0 +1,73 @@
+name: Riser
+options:
+  bundleIdPrefix: com.jamesrellera
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+packages:
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios-spm.git
+    from: 5.0.0
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "22"
+    DEVELOPMENT_TEAM: YOUR_TEAM_ID
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_PREVIEWS: YES
+targets:
+  Riser:
+    type: application
+    platform: iOS
+    sources:
+      - path: Riser/Sources
+      - path: Shared
+      - path: Riser/Resources
+        buildPhase: resources
+        excludes:
+          - "**/.DS_Store"
+      - path: Riser/Assets.xcassets
+      - path: Riser/PrivacyInfo.xcprivacy
+        buildPhase: resources
+    preBuildScripts:
+      - name: Release safety checks
+        basedOnDependencyAnalysis: false
+        inputFiles:
+          - $(SRCROOT)/Riser/Sources/Services/PurchaseService.swift
+        script: |
+          # Never archive a build whose purchases can't work (App Review would reject it).
+          if [ "$CONFIGURATION" = "Release" ] && grep -q "appl_REPLACE" "$SRCROOT/Riser/Sources/Services/PurchaseService.swift"; then
+            echo "error: Paste your RevenueCat Apple API key (appl_...) into Config.revenueCatAPIKey in PurchaseService.swift before archiving."
+            exit 1
+          fi
+    dependencies:
+      - package: RevenueCat
+        product: RevenueCat
+      - target: RiserWidgets
+        embed: true
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: "1"
+        PRODUCT_BUNDLE_IDENTIFIER: com.jamesrellera.riser
+        INFOPLIST_FILE: Riser/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_ENTITLEMENTS: Riser/Riser.entitlements
+      configs:
+        Debug:
+          # Test on device at real speed (the 3D world is per-frame heavy).
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+  RiserWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: RiserWidgets
+      - path: Shared
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: "1"
+        PRODUCT_BUNDLE_IDENTIFIER: com.jamesrellera.riser.widgets
+        INFOPLIST_FILE: RiserWidgets/Info.plist
+        SKIP_INSTALL: YES

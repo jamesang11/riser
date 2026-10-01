@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.withriser.com"
+        }
+      ],
+      "destination": "https://withriser.com/:path*",
+      "permanent": true
+    }
+  ]
+}
