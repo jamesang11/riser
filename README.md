@@ -9,6 +9,27 @@ Built by James Rellera, a student at Ateneo de Manila University, for **RevenueC
 
 <p align="center"><img src="docs/appstore/01_home_morning.png" width="230"> <img src="docs/appstore/02_mission.png" width="230"> <img src="docs/appstore/03_farm.png" width="230"></p>
 
+## For the Next Gen judges
+Thank you so much for taking the time to look at Riser. I'm a student at Ateneo de Manila University, and this is my first ever iOS app.
+
+**The idea.** I'm a chronic snoozer, and half-asleep me will always find the snooze button. Riser is an alarm that only stops once you're actually up and moving, plus a cozy 3D game that gives you a reason to want to get up: every morning you win, your wake-up buddy grows an island with you.
+
+**How far it got.** Even though Next Gen doesn't require a store release, I wanted to see it through properly, so I took Riser all the way to the App Store as a real app with real subscriptions (https://apps.apple.com/app/id6817230193). Everything in the demo video is in this repository and runs on a real iPhone.
+
+**How it uses RevenueCat.** RevenueCat is the whole purchase layer, and honestly it's what made shipping subscriptions possible for a first-timer. See [`PurchaseService.swift`](Riser/Sources/Services/PurchaseService.swift) and [`TrialPaywallView.swift`](Riser/Sources/Views/TrialPaywallView.swift):
+- One `riser_pro` entitlement and a `default` offering with yearly (3-day free trial), monthly and lifetime packages.
+- Trial-eligibility checks, so returning users never see a trial they can't get.
+- Restore Purchases, App Store server notifications, and the RevenueCat Test Store for testing purchases in Debug builds.
+- No backend and no accounts: RevenueCat's anonymous app user IDs are the only identity the app needs.
+
+**Technical choices I'm proud of.**
+- Rep counting with Apple Vision body pose, entirely on device (no frames recorded or uploaded), with separate side-on and front-facing push-up modes so knee push-ups count too ([`PoseRepCounter.swift`](Riser/Sources/Missions/PoseRepCounter.swift)).
+- Real system alarms with AlarmKit, plus an Escape-proof mode that re-rings if you dodge your mission and always stops after an hour ([`AlarmService.swift`](Riser/Sources/Services/AlarmService.swift)).
+- A SceneKit world at up to 120 fps with a sky that follows the real sun, moon and WeatherKit weather ([`WorldScene.swift`](Riser/Sources/World/WorldScene.swift), [`SkyModel.swift`](Riser/Sources/Services/SkyModel.swift)).
+- All 105 3D models made in Blender, generated with my own Python scripts so I could iterate fast ([`Blender/scripts`](Blender/scripts)).
+
+I learned more building this than in anything I've done before, and I'm really grateful to RevenueCat and Shipaton for the push to actually ship it.
+
 ## Features
 - **Real system alarm** with Apple AlarmKit: rings like the built-in Clock app, even when the phone is locked.
 - **Camera-counted push-ups and squats** with Vision body-pose detection, side-on or facing the camera (knee push-ups count too). Runs entirely on device; nothing is recorded or uploaded.
