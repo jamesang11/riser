@@ -39,6 +39,7 @@ struct WorldView: UIViewRepresentable {
     var tripDestination: String? = nil
     var tripVisible: Bool = false
     var tripActivity: Int = 0
+    var tripArrivalTick: Int = 0
     var commuteTick: Int = 0
     var skipTick: Int = 0
     var commuteHarvest: [(Int, String)] = []
@@ -143,6 +144,10 @@ struct WorldView: UIViewRepresentable {
         world.setGloom(gloom)
         world.setInterior(home: home, visible: viewInside, occupant: occupant, decor: decor)
         world.setTrip(destination: tripDestination, visible: tripVisible, activity: tripActivity)
+        if c.tripArrivalTick != tripArrivalTick {
+            c.tripArrivalTick = tripArrivalTick
+            world.playTripArrival()
+        }
         world.setDusty(dusty)
         world.focus = focusFarm || world.isCommuting ? .farm : (focusIsle.map { $0 == 0 ? .home : .isle($0) } ?? .home)
         if c.commuteTick != commuteTick {
@@ -226,6 +231,7 @@ struct WorldView: UIViewRepresentable {
         var atWork: Bool?
         var feedTick = 0
         var skipTick = 0
+        var tripArrivalTick = 0
         var isles: [Int] = []
         var placements: [String: ItemPlacement] = [:]
         var draggingGhost = false

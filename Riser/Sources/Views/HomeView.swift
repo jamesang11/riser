@@ -20,6 +20,8 @@ struct HomeView: View {
     @State private var fedEmoji = "🍎"
     @State private var insideView = false
     @State private var viewingTrip = false
+    @State private var tripArrivalTick = 0
+    @State private var arrivalShown: Date?
     /// Choosing a spot for something (new or moved), and which expansion isle the camera is on.
     @State private var draft: PlacementDraft?
     @State private var viewingIsle: Int?
@@ -65,6 +67,7 @@ struct HomeView: View {
                 tripDestination: onVacation ? model.state.trip?.destination : nil,
                 tripVisible: viewingTrip && onVacation,
                 tripActivity: tripActivity,
+                tripArrivalTick: tripArrivalTick,
                 commuteTick: model.commuteTick,
                 skipTick: skipTick,
                 commuteHarvest: model.commuteHarvest,
@@ -344,6 +347,13 @@ struct HomeView: View {
             model.startBookedTripIfDue()
         }
         .onChange(of: onVacation) { _, on in if !on { viewingTrip = false } }
+        .onChange(of: viewingTrip) { _, on in
+            // First look just after they set off: watch the balloon land.
+            guard on, let trip = model.state.trip, arrivalShown != trip.departed,
+                  Date.now.timeIntervalSince(trip.departed) < 15 * 60 else { return }
+            arrivalShown = trip.departed
+            tripArrivalTick += 1
+        }
         .onChange(of: sky.isDay) { _, _ in updateAudio(sky) }
         .onChange(of: sky.weather.kind) { _, _ in updateAudio(sky) }
     }

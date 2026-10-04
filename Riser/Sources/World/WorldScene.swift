@@ -1494,6 +1494,47 @@ final class WorldScene: NSObject {
         }
     }
 
+    /// The balloon touching down at the vacation spot: plays the first time you look in just after they set off.
+    func playTripArrival() {
+        guard let visitor = tripSprout, !tripPoints.isEmpty else { return }
+        tripRoot.childNode(withName: "TripBalloon", recursively: false)?.removeFromParentNode()
+        let balloon = makeBalloon()
+        balloon.name = "TripBalloon"
+        let seat = balloon.part("SeatPoint") ?? balloon
+        let rider = sprout.passenger()
+        rider.simdScale = SIMD3(repeating: 0.8)
+        seat.addChildNode(rider)
+        tripRoot.addChildNode(balloon)
+        let land = tripPoints[0] + SIMD3<Float>(0.6, 0, 0.5)
+        let a = max(0, min(tripActivity, tripPoints.count - 1))
+        let settle = tripPoints[a]
+        let yaw = tripYaws[a]
+        visitor.removeAction(forKey: "move")
+        visitor.opacity = 0
+        balloon.simdPosition = land + SIMD3(-3, 14, 4)
+        let descend = SCNAction.move(to: SCNVector3(land.x, land.y, land.z), duration: 4.5)
+        descend.timingMode = .easeOut
+        balloon.runAction(.sequence([
+            .wait(duration: 1.0),   // let the camera get there first
+            .group([descend, .rotateBy(x: 0, y: -1.2, z: 0, duration: 4.5)]),
+            .run { [weak self] _ in
+                Task { @MainActor in
+                    guard let self else { return }
+                    rider.removeFromParentNode()
+                    visitor.simdPosition = land
+                    visitor.opacity = 1
+                    visitor.runAction(.sequence([
+                        self.hopMove(visitor, to: settle, duration: 1.2),
+                        .customAction(duration: 0.3) { n, t in n.simdEulerAngles.y += (yaw - n.simdEulerAngles.y) * Float(t / 0.3) },
+                    ]), forKey: "move")
+                }
+            },
+            .wait(duration: 1.2),
+            .group([.moveBy(x: -2, y: 14, z: -3, duration: 5), .sequence([.wait(duration: 3.5), .fadeOut(duration: 1.5)])]),
+            .removeFromParentNode(),
+        ]))
+    }
+
     // MARK: - Farm Island (Sprig's workplace)
 
     enum Focus: Equatable { case home, farm, isle(Int) }
