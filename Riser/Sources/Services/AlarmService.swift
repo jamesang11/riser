@@ -46,6 +46,25 @@ enum MissionInbox {
         set { UserDefaults.standard.set(newValue?.uuidString, forKey: "riser.guardID") }
     }
 
+    /// When re-rings were last called off (mission finished, or the player came back to it). A re-ring or guard
+    /// whose booking was still in flight at that moment cancels itself instead of ringing later.
+    static var silencedAt: Date {
+        get { UserDefaults.standard.object(forKey: "riser.silencedAt") as? Date ?? .distantPast }
+        set { UserDefaults.standard.set(newValue, forKey: "riser.silencedAt") }
+    }
+
+    /// When the last real mission was finished. Something ringing just after that is a leftover, not a new alarm.
+    static var completedAt: Date {
+        get { UserDefaults.standard.object(forKey: "riser.completedAt") as? Date ?? .distantPast }
+        set { UserDefaults.standard.set(newValue, forKey: "riser.completedAt") }
+    }
+
+    /// A re-ring, guard or test alarm (not one of the player's own alarms) ringing within two minutes of a
+    /// finished mission.
+    static func isLeftover(alarmID: UUID, sourceID: UUID?) -> Bool {
+        alarmID != sourceID && Date.now.timeIntervalSince(completedAt) < 120
+    }
+
     static var nagIDs: [UUID] {
         get { (UserDefaults.standard.stringArray(forKey: nagKey) ?? []).compactMap(UUID.init) }
         set { UserDefaults.standard.set(newValue.map(\.uuidString), forKey: nagKey) }
@@ -209,6 +228,7 @@ enum AlarmService {
     /// Re-arms the alarm if the player tries to escape without finishing their mission.
     static func scheduleNag(sourceID: UUID, in seconds: TimeInterval = MissionInbox.nagInterval) async {
         guard isAuthorized, MissionInbox.nagCount < maxNags else { return }
+        let requested = Date.now
         MissionInbox.nagCount += 1
         let id = UUID()
         MissionInbox.nagIDs.append(id)
@@ -228,18 +248,28 @@ enum AlarmService {
             metadata: RiserAlarmMetadata(mission: mission, target: target, isNag: true),
             sound: MissionInbox.sound(for: sourceID)
         )
+        // Called off while this was being booked: don't let it ring.
+        if MissionInbox.silencedAt > requested {
+            try? manager.cancel(id: id)
+            MissionInbox.nagIDs.removeAll { $0 == id }
+        }
     }
 
-    /// Called when a mission is finished: silence everything that was chasing the player.
-    static func missionCompleted() {
+    /// Called when a mission is finished: silence everything that was chasing the player. Only the player's own
+    /// saved alarms stay booked; re-rings, the guard and any other pending test alarm are done too.
+    static func missionCompleted(keeping saved: Set<UUID>) {
+        MissionInbox.silencedAt = .now
+        MissionInbox.completedAt = .now
         disarmGuard()
         for id in MissionInbox.nagIDs {
             try? manager.cancel(id: id)
         }
-        for alarm in (try? manager.alarms) ?? [] where alarm.state == .alerting {
-            try? manager.stop(id: alarm.id)
+        for alarm in (try? manager.alarms) ?? [] {
+            if alarm.state == .alerting { try? manager.stop(id: alarm.id) }
+            if !saved.contains(alarm.id) { try? manager.cancel(id: alarm.id) }
         }
         MissionInbox.nagIDs = []
+        MissionInbox.testIDs = []
         MissionInbox.nagCount = 0
         MissionInbox.clear()
     }
@@ -253,6 +283,7 @@ enum AlarmService {
     /// after the player leaves, which is what makes it impossible to wriggle out of.
     static func armGuard(sourceID: UUID) async {
         guard isAuthorized else { return }
+        let requested = Date.now
         let old = MissionInbox.guardID
         let id = UUID()
         let (mission, target) = MissionInbox.mission(for: sourceID.uuidString) ?? (.pushups, MissionKind.pushups.defaultTarget)
@@ -266,6 +297,11 @@ enum AlarmService {
                 metadata: RiserAlarmMetadata(mission: mission, target: target, isNag: true),
                 sound: MissionInbox.sound(for: sourceID)
             )
+            // The mission was finished while this guard was being booked: cancel it rather than let it ring.
+            if MissionInbox.silencedAt > requested {
+                try? manager.cancel(id: id)
+                return
+            }
             MissionInbox.guardID = id
             if let old { try? manager.cancel(id: old) }
         } catch {}
@@ -277,6 +313,7 @@ enum AlarmService {
     }
 
     static func cancelNags() {
+        MissionInbox.silencedAt = .now
         for id in MissionInbox.nagIDs { try? manager.cancel(id: id) }
         MissionInbox.nagIDs = []
         MissionInbox.nagCount = 0
@@ -389,7 +426,9 @@ struct EscapeAlarmIntent: LiveActivityIntent {
             try? AlarmManager.shared.stop(id: id)
         }
         // Escape-proof (opt-in): the mission stays pending and the alarm re-rings after the chosen delay.
-        if MissionInbox.escapeProof, let source = UUID(uuidString: sourceID) {
+        // A leftover that rang just after a finished mission is only silenced.
+        if MissionInbox.escapeProof, let source = UUID(uuidString: sourceID),
+           !MissionInbox.isLeftover(alarmID: UUID(uuidString: alarmID) ?? source, sourceID: source) {
             MissionInbox.post(sourceAlarmID: sourceID)
             await AlarmService.scheduleNag(sourceID: source)
         }

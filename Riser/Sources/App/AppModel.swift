@@ -314,7 +314,9 @@ final class AppModel {
 
         let newAchievements = checkAchievements()
         if !active.isPractice {
-            AlarmService.missionCompleted()
+            // Stop re-booking the guard first, so a booking can't land after it's been cancelled.
+            pauseMissionGuard()
+            AlarmService.missionCompleted(keeping: Set(state.alarms.map(\.id)))
             MissionInbox.clear()
         }
         SoundService.shared.stopAlarmLoop()

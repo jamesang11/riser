@@ -170,6 +170,12 @@ struct RiserApp: App {
         #endif
         for await alarms in AlarmService.manager.alarmUpdates {
             if let ringing = alarms.first(where: { $0.state == .alerting }), model.activeMission?.isPractice ?? true {
+                // A leftover ringing right after a finished mission: silence it instead of starting another one.
+                let isSaved = model.state.alarms.contains { $0.id == ringing.id }
+                if !isSaved && MissionInbox.isLeftover(alarmID: ringing.id, sourceID: MissionInbox.source(for: ringing.id)) {
+                    AlarmService.stopRinging()
+                    continue
+                }
                 // Test alarms and re-rings have their own ids: map them back to the alarm they belong to.
                 let source = model.state.alarms.first { $0.id == ringing.id }?.id.uuidString
                     ?? MissionInbox.source(for: ringing.id)?.uuidString

@@ -181,6 +181,7 @@ struct AlarmEditor: View {
     var isNew: Bool
     @State private var time = Date.now
     @State private var testScheduled: Date?
+    @State private var schedulingTest = false
     @State private var errorText: String?
 
     var body: some View {
@@ -276,7 +277,7 @@ struct AlarmEditor: View {
                         Label(testScheduled == nil ? "Test the full alarm in 1 minute" : "Test alarm set, lock your phone!",
                               systemImage: testScheduled == nil ? "bell.badge.waveform.fill" : "checkmark.circle.fill")
                     }
-                    .disabled(testScheduled != nil)
+                    .disabled(testScheduled != nil || schedulingTest)
                     if let errorText {
                         Text(errorText).font(.footnote).foregroundStyle(.red)
                     }
@@ -332,6 +333,10 @@ struct AlarmEditor: View {
     }
 
     private func scheduleTest() async {
+        // One test alarm per tap.
+        guard !schedulingTest, testScheduled == nil else { return }
+        schedulingTest = true
+        defer { schedulingTest = false }
         applyTime()
         guard await AlarmService.requestAuthorization() else {
             errorText = "Allow alarms for Riser in Settings first."
